@@ -7,11 +7,11 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 
 ## Design documentation
 
-* [Wireframe diagram](wireframe.md){target="_blank}
+* [Wireframe diagram](wireframe.md)
 
 ## Entity documentation
 
-* [Entity relationship diagram](erd.md){target="_blank}
+* [Entity-relationship diagram](erd.md)
 
 ## Intended users
 
@@ -43,8 +43,8 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 * Android notification system
 * Android alarm manager
 * Realtime weather data by user's ZIP code
-* Data queries to made via API to [Weather Unlocked](https://developer.weatherunlocked.com/documentation/localweather){target="_blank}
-* [API link](http://api.weatherunlocked.com/){target="_blank}
+* Data queries to made via API to [Weather Unlocked](https://developer.weatherunlocked.com/documentation/localweather)
+* [API link](http://api.weatherunlocked.com/)
 * Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'.
 * On the scheduled day of watering, query will be made for weather data for user's ZIP code
 * Response will be reviewed for precipitation values over the prior 3 days
