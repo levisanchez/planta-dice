@@ -35,16 +35,18 @@ The Planta Dice app would remind people to water their plants on a regular basis
 ## Persistent data
 
 * Data log including plant's watering history and perceived condition by the user.
+*_ Information log will be available to user by clicking on "Review Waterings" button on Home Screen.
 
 
 ## Device/external services
 
-* App notification system
+* Android notification system
 * Realtime weather data by user's ZIP code
 * Data queries to made via API to [Weather Unlocked](https://developer.weatherunlocked.com/documentation/localweather)
-* API link [http://api.weatherunlocked.com/ or https://api.weatherunlocked.com/](http://api.weatherunlocked.com/ or https://api.weatherunlocked.com/)
-* Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'
-* On the scheduled day of watering, query will be made for weather data for user's ZIP code
+* [API link](http://api.weatherunlocked.com/ or https://api.weatherunlocked.com/)
+* Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'.
+* On the scheduled day of watering, query will be made for weather data for user's ZIP code.
 * Response will be reviewed for precipitation values over the prior 3 days.
 * If precipitation is greater than (>) 0.5 inches, then the app will _not_ notify the user to water the plant.
 * Data, log of precipitation value and scheduled water day skip will be written to Plant History database resource.
+* If weather data becomes unavailable, app will continue standard interval notifications to user.
