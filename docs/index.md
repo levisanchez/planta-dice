@@ -8,3 +8,43 @@ The Planta Dice app would remind people to water their plants on a regular basis
 ## Design documentation
 
 * [Wireframe diagram](wireframe.md)
+
+## Entity documentation
+
+* [Entity relationship diagram](erd.md)
+
+## Intended users
+
+* People who are busy with multiple activities outside of the house.
+
+>_As someone who goes to school, work, and has a growing family, I need an app to remind me that my plants need to be watered so that I don't have to invest more time and money in replacing my plants._  
+
+* People who have color deficient vision.
+
+>_As someone who has trouble distinguishing colors, particularly between green and brown, I need an app that alerts me when my plants need to be watered so that they survive and continue to adorn my household._
+
+## Functionality
+
+* App will allow user to input plant type and if it is located outdoors
+* If outdoor is selected app will require user's ZIP code.  
+* App will determine watering interval based on plant's water needs with the interval counting down from the time of entering plant data. .
+* App will query weather service for precipitation over the previous three days and adjust recommendations accordingly
+* Send notifications to user when to water plants
+
+
+## Persistent data
+
+* Data log including plant's watering history and percieved condition by the user.
+
+
+## Device/external services
+
+* App notification system
+* Realtime weather data by user's ZIP code
+* Data queries to made via API to [Weather Unlocked](https://developer.weatherunlocked.com/documentation/localweather)
+* API link [http://api.weatherunlocked.com/ or https://api.weatherunlocked.com/](http://api.weatherunlocked.com/ or https://api.weatherunlocked.com/)
+* Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'
+* On the scheduled day of watering, query will be made for weather data for user's ZIP code
+* Response will be reviewed for precipitation values over the prior 3 days.
+* If precipitation is greater that (>) 0.5 inches, then the app will _not_ notify the user to water the plant.
+* Data, log of precipitation value and scheduled water day skip will be written to Plant History database resource.
