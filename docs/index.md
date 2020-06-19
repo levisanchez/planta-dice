@@ -56,7 +56,7 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 
 * Ability for users to upload pictures of plants being added
 * User to request type of watering schedule
-  - To group waterings to the fewest instances, or standard incremental notifications as they come up
+  * To group waterings for multiple plants to the fewest instances, or standard incremental notifications for each plant as they come up
 * Rating system to determine if the plants need to dynamically modify water frequency based on plant condition poll
 * Dew / humidity taken into account for outdoor plants
 * Seasonal pattern recognition for varying watering requirements
