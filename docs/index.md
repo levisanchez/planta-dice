@@ -27,14 +27,14 @@ The Planta Dice app would remind people to water their plants on a regular basis
 
 * App will allow user to input plant type and if it is located outdoors
 * If outdoor is selected app will require user's ZIP code.  
-* App will determine watering interval based on plant's water needs with the interval counting down from the time of entering plant data. .
+* App will determine watering interval based on plant's water needs with the interval counting down from the time of entering plant data.
 * App will query weather service for precipitation over the previous three days and adjust recommendations accordingly
 * Send notifications to user when to water plants
 
 
 ## Persistent data
 
-* Data log including plant's watering history and percieved condition by the user.
+* Data log including plant's watering history and perceived condition by the user.
 
 
 ## Device/external services
@@ -46,5 +46,5 @@ The Planta Dice app would remind people to water their plants on a regular basis
 * Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'
 * On the scheduled day of watering, query will be made for weather data for user's ZIP code
 * Response will be reviewed for precipitation values over the prior 3 days.
-* If precipitation is greater that (>) 0.5 inches, then the app will _not_ notify the user to water the plant.
+* If precipitation is greater than (>) 0.5 inches, then the app will _not_ notify the user to water the plant.
 * Data, log of precipitation value and scheduled water day skip will be written to Plant History database resource.
