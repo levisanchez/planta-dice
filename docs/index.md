@@ -35,7 +35,7 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 ## Persistent data
 
 * Data log including plant's watering history and perceived condition by the user.
-*_ Information log will be available to user by clicking on "Review Waterings" button on Home Screen.
+    * Information log will be available to user by clicking on "Review Waterings" button on Home Screen.
 
 
 ## Device/external services
