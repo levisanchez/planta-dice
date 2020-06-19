@@ -41,11 +41,17 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 ## Device/external services
 
 * Android notification system
+    * [Android Notification Manager documentation](https://developer.android.com/reference/android/app/NotificationManager?hl=en)
+    * Will notify the user in the background through user-preference notifications (vibration, persistent blinking light...) that a plant needs to be watered 
 * Android alarm manager
-* Realtime weather data by user's ZIP code
-* Data queries to made via API to [Weather Unlocked](https://developer.weatherunlocked.com/documentation/localweather)
-* [API link](http://api.weatherunlocked.com/)
-* Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'.
+    * [Android Alarm Manager documentation](https://developer.android.com/reference/android/app/AlarmManager?hl=en)
+    * Will run at a regular interval to determine app data state and notification necessity
+    * Will function to retrieve any necessary weather data for API service results
+* Weather tracking service
+    * Realtime weather data by user's ZIP code
+    * Data queries to made via API to [Weather Unlocked documentation](https://developer.weatherunlocked.com/documentation/localweather)
+    * [API link](http://api.weatherunlocked.com/)
+    * Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'.
 * On the scheduled day of watering, query will be made for weather data for user's ZIP code
 * Response will be reviewed for precipitation values over the prior 3 days
 * If precipitation is greater than (>) 0.5 inches, then the app will _not_ notify the user to water the plant
