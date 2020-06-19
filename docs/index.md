@@ -52,11 +52,11 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
     * Data queries to made via API to [Weather Unlocked documentation](https://developer.weatherunlocked.com/documentation/localweather)
     * [API link](http://api.weatherunlocked.com/)
     * Location services of Weather Unlocked support the structure of postal codes by structuring the query with "country.postcode".ex: 'us.87109'.
+    * If weather data becomes unavailable, app will continue standard interval notifications to user
 * On the scheduled day of watering, query will be made for weather data for user's ZIP code
 * Response will be reviewed for precipitation values over the prior 3 days
 * If precipitation is greater than (>) 0.5 inches, then the app will _not_ notify the user to water the plant
 * Data, log of precipitation value and scheduled water day skip will be written to Plant History database resource
-* If weather data becomes unavailable, app will continue standard interval notifications to user
 
 ## Stretch goals/possible enhancements
 
