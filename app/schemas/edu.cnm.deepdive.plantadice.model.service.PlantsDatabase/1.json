@@ -1,0 +1,170 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "bdf33d8805673622a1a01f3a0198ea00",
+    "entities": [
+      {
+        "tableName": "Plant",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`plant_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `water_frequency_days` INTEGER NOT NULL, `location_outdoor` INTEGER NOT NULL, `name` TEXT, `zip_code` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "plant_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "water_frequency_days",
+            "columnName": "water_frequency_days",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location_outdoor",
+            "columnName": "location_outdoor",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "zipCode",
+            "columnName": "zip_code",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "plant_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Plant_zip_code",
+            "unique": false,
+            "columnNames": [
+              "zip_code"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Plant_zip_code` ON `${TABLE_NAME}` (`zip_code`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "PlantHistory",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`plant_history_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plant_state` TEXT, `water_confirm` INTEGER NOT NULL, `timestamp` INTEGER, FOREIGN KEY(`plant_history_id`) REFERENCES `Plant`(`plant_id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "plant_history_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plantState",
+            "columnName": "plant_state",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "water_confirm",
+            "columnName": "water_confirm",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "plant_history_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "Plant",
+            "onDelete": "SET NULL",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "plant_history_id"
+            ],
+            "referencedColumns": [
+              "plant_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "Weather",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`weather_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plant_state` TEXT, `rain` INTEGER NOT NULL, `timestamp` INTEGER, `zip_code` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "weather_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plantState",
+            "columnName": "plant_state",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rain",
+            "columnName": "rain",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "zipCode",
+            "columnName": "zip_code",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "weather_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Weather_zip_code",
+            "unique": false,
+            "columnNames": [
+              "zip_code"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_Weather_zip_code` ON `${TABLE_NAME}` (`zip_code`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bdf33d8805673622a1a01f3a0198ea00')"
+    ]
+  }
+}

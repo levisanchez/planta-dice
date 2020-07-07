@@ -1,60 +1,66 @@
 package edu.cnm.deepdive.plantadice.model.entity;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
-import java.sql.Date;
+
+import java.util.Date;
 import javax.xml.transform.Source;
 
 @Entity(
     foreignKeys = @ForeignKey(
-        entity = Source.class,
+        entity = Plant.class,
         parentColumns = "plant_id",
-        childColumns = "plant_id",
+        childColumns = "plant_history_id",
         onDelete = ForeignKey.SET_NULL)
 )
 
 public class PlantHistory {
 
-        public void setPlantState(Enum plantState) {
-                this.plantState = plantState;
-        }
+  @PrimaryKey(autoGenerate = true)
+  @ColumnInfo(name = "plant_history_id")
+  private long id;
 
-        public void setWater_confirm(boolean water_confirm) {
-                this.water_confirm = water_confirm;
-        }
+  @ColumnInfo(name = "plant_state")
+  private String plantState;
 
-        public void setTimestamp(Date timestamp) {
-                this.timestamp = timestamp;
-        }
+  @ColumnInfo(name = "water_confirm")
+  private boolean water_confirm;
 
-        public long getId() {
-                return id;
-        }
+  @ColumnInfo(name = "timestamp")
+  private Date timestamp;
 
-        public Enum getPlantState() {
-                return plantState;
-        }
+  public long getId() {
+    return id;
+  }
 
-        public boolean isWater_confirm() {
-                return water_confirm;
-        }
+  public void setId(long id) {
+    this.id = id;
+  }
 
-        public Date getTimestamp() {
-                return timestamp;
-        }
+  public String getPlantState() {
+    return plantState;
+  }
 
-        @PrimaryKey(autoGenerate = true)
-        @ColumnInfo(name = "plant-history_id")
-        private long id;
+  public void setPlantState(String plantState) {
+    this.plantState = plantState;
+  }
 
-        @ColumnInfo(name = "plant_state")
-        private Enum plantState;
+  public boolean isWater_confirm() {
+    return water_confirm;
+  }
 
-        @ColumnInfo(name = "water_confirm")
-        private boolean water_confirm;
+  public void setWater_confirm(boolean water_confirm) {
+    this.water_confirm = water_confirm;
+  }
 
-        @ColumnInfo(name = "timestamp")
-        private Date timestamp;
-        }
+  public Date getTimestamp() {
+    return timestamp;
+  }
+
+  public void setTimestamp(Date timestamp) {
+    this.timestamp = timestamp;
+  }
+}
