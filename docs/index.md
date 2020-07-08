@@ -5,14 +5,6 @@ This app proposal addresses challenges sometimes faced with the normal upkeep of
 
 The Planta Dice app reminds users to water their plants on a regular basis. It takes into account whether the plants are inside or outside. If the plants are inside, the app will remind with a static interval frequency. If the plants are outside, Planta Dice app references the weather service to determine precipitation in the area. If precipitation requirements for the plant is met by weather conditions, the app would not generate a reminder message for the user.
 
-## Design documentation
-
-* [Wireframe diagram](wireframe.md)
-
-## Entity documentation
-
-* [Entity-relationship diagram](erd.md)
-
 ## Intended users
 
 * People who are busy with multiple activities outside of the house
@@ -37,6 +29,17 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 * Data log including plant's watering history and perceived condition by the user
     * Information log will be available to user by clicking on "Review Waterings" button on Home Screen
 
+## Design documentation
+
+* [Wireframe diagram](wireframe.md)
+
+## Entity documentation
+
+* [Entity-relationship diagram](erd.md)
+
+## Daos
+
+* [Entity-relationship diagram](erd.md)
 
 ## Device/external services
 
