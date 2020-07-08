@@ -38,11 +38,30 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 * [Entity-relationship diagram](erd.md)
 
 ## Entitities
-* 
+
+* [Plant Entity](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/Plant.java)
+* [Plant History Entity](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/PlantHistory.java)
+* [Weather Entity](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/Weather.java)
 
 ## Daos
 
-* [Entity-relationship diagram](erd.md)
+* [PlantDao](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantDao.java)
+* [PlantHistoryDao](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantHistoryDao.java)
+* [WeatherDao](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/WeatherDao.java)
+
+## Repositories
+
+* [Plant Repository](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantRepository.java)
+* [Plant History Repository](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantHistoryRepository.java)
+* [Weather Repository](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/service/WeatherRepository.java)
+
+## Database
+
+* [Plants Database](https://github.com/levisanchez/planta-dice/blob/master/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantsDatabase.java)
+
+## DDL
+
+* [Data Definition Language](ddl.md)
 
 ## Device/external services
 
