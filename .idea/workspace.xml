@@ -28,9 +28,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="updated index.md">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+    <list default="true" id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="added additional files to git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +147,7 @@
       <workItem from="1594048600069" duration="1535000" />
       <workItem from="1594061199446" duration="8748000" />
       <workItem from="1594156975989" duration="7744000" />
-      <workItem from="1594173733184" duration="10955000" />
+      <workItem from="1594173733184" duration="11546000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity classes">
       <created>1593634075413</created>
@@ -193,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594184244318</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added additional files to git">
+      <created>1594187898283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594187898283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +223,8 @@
     <MESSAGE value="Added ddl.sql" />
     <MESSAGE value="Added ddl.md" />
     <MESSAGE value="updated index.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated index.md" />
+    <MESSAGE value="added additional files to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="added additional files to git" />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="151" key="#Project_Structure" timestamp="1593709648997">
@@ -254,12 +260,12 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="486" y="340" key="AndroidCreateResourceFileDialog/0.-1057.1920.1057/-1080.-1057.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1594048998096" />
-    <state x="0" y="23" key="Vcs.Push.Dialog.v2" timestamp="1594184250007">
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2" timestamp="1594187904600">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634077820" />
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1593697327236" />
-    <state x="0" y="23" key="Vcs.Push.Dialog.v2/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594184250007" />
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594187904600" />
     <state x="0" y="23" key="chooseDestDirectoryDialog" timestamp="1593634532047">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
