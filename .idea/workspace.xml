@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="Added ddl.sql">
+      <change afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Planta Dice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/schemas/edu.cnm.deepdive.plantadice.service.PlantsDatabase/1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/WeatherRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/ui/dashboard/DashboardFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/ui/dashboard/DashboardViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/ui/home/HomeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/ui/home/HomeSecondFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/ui/home/HomeViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/ui/notifications/NotificationsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/ui/notifications/NotificationsViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notifications.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/ddl.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/PlantsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/PlantsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/service/PlantHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/service/PlantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/service/PlantsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantsDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/service/WeatherRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1e3Mf74YF7cRXbpAnCWI3mcaHFK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.cnm.deepdive.plantadice" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="edu.cnm.deepdive.plantadice.controller" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.cnm.deepdive.plantadice.model.service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="" />
+      <created>1593545923130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593545923130</updated>
+      <workItem from="1593545924740" duration="5552000" />
+      <workItem from="1593630570168" duration="7822000" />
+      <workItem from="1593655207919" duration="3452000" />
+      <workItem from="1593698218415" duration="607000" />
+      <workItem from="1593709319578" duration="1935000" />
+      <workItem from="1593716612381" duration="4053000" />
+      <workItem from="1593997808623" duration="1587000" />
+      <workItem from="1594006245656" duration="2863000" />
+      <workItem from="1594048600069" duration="1535000" />
+      <workItem from="1594061199446" duration="8748000" />
+      <workItem from="1594156975989" duration="7744000" />
+      <workItem from="1594173733184" duration="6994000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Entity classes">
+      <created>1593634075413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593634075413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added database and repository classes">
+      <created>1593697324579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593697324579</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added schema directory and resolved errors">
+      <created>1594163738333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594163738333</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added ddl.sql">
+      <created>1594176198129</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594176198129</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Entity classes" />
+    <MESSAGE value="added database and repository classes" />
+    <MESSAGE value="Added schema directory and resolved errors" />
+    <MESSAGE value="Added ddl.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ddl.sql" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="373" y="151" key="#Project_Structure" timestamp="1593709648997">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="373" y="151" key="#Project_Structure/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1593709648997" />
+    <state x="186" y="408" key="#SQL_Dialects" timestamp="1594160601339">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="186" y="408" key="#SQL_Dialects/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594160601339" />
+    <state x="489" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594069499114">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="489" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.-1057.1920.1057/-1080.-1057.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1594069499114" />
+    <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1594159044027">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634037700" />
+    <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594159044027" />
+    <state x="342" y="489" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594176870533">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="342" y="489" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594176870533" />
+    <state x="653" y="443" width="479" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594176938890">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="653" y="443" width="479" height="256" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594176938890" />
+    <state x="662" y="456" width="549" height="223" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1594176874914">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="662" y="456" width="549" height="223" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594176874914" />
+    <state x="486" y="340" key="AndroidCreateResourceFileDialog" timestamp="1594048998096">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="486" y="340" key="AndroidCreateResourceFileDialog/0.-1057.1920.1057/-1080.-1057.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1594048998096" />
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2" timestamp="1594176201818">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634077820" />
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1593697327236" />
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594176201818" />
+    <state x="0" y="23" key="chooseDestDirectoryDialog" timestamp="1593634532047">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="0" y="23" key="chooseDestDirectoryDialog/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634532047" />
+    <state x="314" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594158054354">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="314" y="492" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594158054354" />
+    <state x="367" y="154" width="1313" height="1010" key="dock-window-1" timestamp="1593634045486">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="367" y="154" width="1313" height="1010" key="dock-window-1/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634045486" />
+    <state x="190" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1594161899911">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="190" y="268" width="670" height="676" key="search.everywhere.popup/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594161899911" />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.plantadice.model.service;
+package edu.cnm.deepdive.plantadice.service;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -14,7 +14,7 @@ import edu.cnm.deepdive.plantadice.model.dao.WeatherDao;
 import edu.cnm.deepdive.plantadice.model.entity.Plant;
 import edu.cnm.deepdive.plantadice.model.entity.PlantHistory;
 import edu.cnm.deepdive.plantadice.model.entity.Weather;
-import edu.cnm.deepdive.plantadice.model.service.PlantsDatabase.Converters;
+import edu.cnm.deepdive.plantadice.service.PlantsDatabase.Converters;
 import java.util.Date;
 
 @Database(

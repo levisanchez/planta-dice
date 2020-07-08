@@ -37,6 +37,9 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 
 * [Entity-relationship diagram](erd.md)
 
+## Entitities
+* 
+
 ## Daos
 
 * [Entity-relationship diagram](erd.md)

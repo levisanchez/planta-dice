@@ -1,8 +1,8 @@
-package edu.cnm.deepdive.plantadice.model;
+package edu.cnm.deepdive.plantadice;
 
 import android.app.Application;
 import com.facebook.stetho.Stetho;
-import edu.cnm.deepdive.plantadice.model.service.PlantsDatabase;
+import edu.cnm.deepdive.plantadice.service.PlantsDatabase;
 import io.reactivex.schedulers.Schedulers;
 
 public class PlantsApplication extends Application {

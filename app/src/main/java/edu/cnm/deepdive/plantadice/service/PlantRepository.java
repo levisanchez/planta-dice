@@ -1,10 +1,9 @@
-package edu.cnm.deepdive.plantadice.model.service;
+package edu.cnm.deepdive.plantadice.service;
 
 import android.content.Context;
 import androidx.lifecycle.LiveData;
 import edu.cnm.deepdive.plantadice.model.dao.PlantDao;
 import edu.cnm.deepdive.plantadice.model.entity.Plant;
-import edu.cnm.deepdive.plantadice.model.service.PlantsDatabase;
 import java.util.List;
 
 public class PlantRepository {

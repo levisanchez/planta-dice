@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.plantadice.model.service;
+package edu.cnm.deepdive.plantadice.service;
 
 import android.content.Context;
 import androidx.lifecycle.LiveData;
