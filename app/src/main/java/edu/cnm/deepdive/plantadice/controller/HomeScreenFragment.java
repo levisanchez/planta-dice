@@ -12,11 +12,10 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
 import edu.cnm.deepdive.plantadice.R;
-import edu.cnm.deepdive.plantadice.ui.home.HomeFragmentDirections;
-import edu.cnm.deepdive.plantadice.ui.home.HomeFragmentDirections.ActionHomeFragmentToHomeSecondFragment;
+import edu.cnm.deepdive.plantadice.controller.HomeScreenFragmentDirections.ActionHomeFragmentToHomeSecondFragment;
 import edu.cnm.deepdive.plantadice.viewmodel.HomeViewModel;
 
-public class HomeFragment extends Fragment {
+public class HomeScreenFragment extends Fragment {
 
   private HomeViewModel homeViewModel;
 
@@ -39,13 +38,13 @@ public class HomeFragment extends Fragment {
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
-    view.findViewById(R.id.button_home).setOnClickListener(new View.OnClickListener() {
+    view.findViewById(R.id.add_plant_button).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         ActionHomeFragmentToHomeSecondFragment action =
-            HomeFragmentDirections.actionHomeFragmentToHomeSecondFragment
-                ("From HomeFragment");
-        NavHostFragment.findNavController(HomeFragment.this)
+            HomeScreenFragmentDirections.
+                actionHomeFragmentToHomeSecondFragment("To Home Selection Fragment");
+        NavHostFragment.findNavController(HomeScreenFragment.this)
             .navigate(action);
       }
     });

@@ -5,15 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-
 import edu.cnm.deepdive.plantadice.R;
-import edu.cnm.deepdive.plantadice.ui.home.HomeSecondFragmentArgs;
 
-public class HomeSecondFragment extends Fragment {
+
+public class HomeSelectionFragment extends Fragment {
 
   @Override
   public View onCreateView(
@@ -21,20 +19,20 @@ public class HomeSecondFragment extends Fragment {
       Bundle savedInstanceState
   ) {
     // Inflate the layout for this fragment
-    return inflater.inflate(R.layout.fragment_home_second, container, false);
+    return inflater.inflate(R.layout.fragment_plant_selection, container, false);
   }
 
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
-    String myArg = HomeSecondFragmentArgs.fromBundle(getArguments()).getMyArg();
-    TextView textView = view.findViewById(R.id.textview_home_second);
+    String myArg = HomeSelectionFragmentArgs.fromBundle(getArguments()).getMyArg();
+    TextView textView = view.findViewById(R.id.text_home);
     textView.setText(getString(R.string.hello_home_second, myArg));
 
-    view.findViewById(R.id.button_home_second).setOnClickListener(new View.OnClickListener() {
+    view.findViewById(R.id.add_plant_button).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        NavHostFragment.findNavController(HomeSecondFragment.this)
+        NavHostFragment.findNavController(HomeSelectionFragment.this)
             .navigate(R.id.action_HomeSecondFragment_to_HomeFragment);
       }
     });

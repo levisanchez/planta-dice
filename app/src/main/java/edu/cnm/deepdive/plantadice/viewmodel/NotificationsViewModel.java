@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.plantadice.controller;
+package edu.cnm.deepdive.plantadice.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

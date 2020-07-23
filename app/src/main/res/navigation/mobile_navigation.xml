@@ -8,7 +8,7 @@
   <fragment
     android:id="@+id/navigation_home"
     android:label="@string/title_home"
-    android:name="edu.cnm.deepdive.plantadice.controller.HomeFragment"
+    android:name="edu.cnm.deepdive.plantadice.controller.HomeScreenFragment"
     tools:layout="@layout/fragment_home">
 
     <action
@@ -18,8 +18,8 @@
   <fragment
     android:id="@+id/navigation_home_second"
     android:label="@string/home_second"
-    android:name="edu.cnm.deepdive.plantadice.controller.HomeSecondFragment"
-    tools:layout="@layout/fragment_home_second">
+    android:name="edu.cnm.deepdive.plantadice.controller.HomeSelectionFragment"
+    tools:layout="@layout/fragment_plant_selection">
     <action
       android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
       app:destination="@id/navigation_home"/>
@@ -32,12 +32,12 @@
   <fragment
     android:id="@+id/navigation_dashboard"
     android:label="@string/title_dashboard"
-    android:name="edu.cnm.deepdive.plantadice.controller.DashboardFragment"
+    android:name="edu.cnm.deepdive.plantadice.controller.PlantHistoryFragment"
     tools:layout="@layout/fragment_dashboard"/>
 
   <fragment
     android:id="@+id/navigation_notifications"
     android:label="@string/title_notifications"
-    android:name="edu.cnm.deepdive.plantadice.controller.NotificationsFragment"
+    android:name="edu.cnm.deepdive.plantadice.controller.NotificationFragment"
     tools:layout="@layout/fragment_notifications"/>
 </navigation>

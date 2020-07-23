@@ -4,7 +4,10 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
+import com.google.gson.annotations.Expose;
+import java.nio.file.WatchEvent;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity(
@@ -67,5 +70,25 @@ public class Weather {
 
   public void setZipCode(int zipCode) {
     this.zipCode = zipCode;
+  }
+
+  public static class SearchResult {
+
+    @Expose
+    private List<Weather> data;
+
+    public List<Weather> getData() {
+      return data;
+    }
+
+    public void setData(List<Weather> data) {
+      this.data = data;
+    }
+
+    @Override
+    public String toString() {
+      return "SearchResult{" +
+          "data=" + data.toString();
+    }
   }
 }

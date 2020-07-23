@@ -1,1 +1,1 @@
-[{"navFile":"src/main/res/navigation/mobile_navigation.xml","javaFiles":["edu.cnm.deepdive.plantadice.controller.HomeFragmentDirections","edu.cnm.deepdive.plantadice.controller.HomeSecondFragmentDirections","edu.cnm.deepdive.plantadice.controller.HomeSecondFragmentArgs"]}]
+[{"navFile":"src/main/res/navigation/mobile_navigation.xml","javaFiles":["edu.cnm.deepdive.plantadice.controller.HomeScreenFragmentDirections","edu.cnm.deepdive.plantadice.controller.HomeSelectionFragmentDirections","edu.cnm.deepdive.plantadice.controller.HomeSelectionFragmentArgs"]}]
