@@ -23,8 +23,8 @@ android {
         buildConfigField "String", "BASE_URL",
                 getProperty("$projectDir/../../../services/planta.properties", "base_url")
 
-        buildConfigField "String", "CLIENT_ID",
-                getProperty("$projectDir/../../../services/planta.properties", "client_id")
+        buildConfigField "String", "APP_KEY",
+                getProperty("$projectDir/../../../services/planta.properties", "app_key")
 
         buildConfigField "String", "APP_ID",
                 getProperty("$projectDir/../../../services/planta.properties", "app_id")
@@ -85,10 +85,6 @@ dependencies {
     // Apache Commons CSV
     implementation 'org.apache.commons:commons-csv:1.8'
 
-    // Test dependencies
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
     // ReactiveX dependencies
     implementation 'io.reactivex.rxjava2:rxjava:2.2.19'

@@ -5,23 +5,22 @@ import androidx.room.Entity;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 import java.nio.file.WatchEvent;
 import java.util.Date;
 import java.util.List;
 
 
-@Entity(
-    indices = @Index(value = "zip_code", unique = false)
-)
-
+@Entity
 public class Weather {
 
   @PrimaryKey(autoGenerate = true)
   @ColumnInfo(name = "weather_id")
   private long id;
 
-  @ColumnInfo(name = "plant_state")
-  private String plantState;
+  @SerializedName("humid_pct")
+  @Expose
+  private float humidity;
 
   @ColumnInfo(name = "rain")
   private boolean rain;
@@ -29,7 +28,7 @@ public class Weather {
   @ColumnInfo(name = "timestamp")
   private Date timestamp;
 
-  @ColumnInfo(name = "zip_code")
+  @ColumnInfo(name = "zip_code", index = true)
   private int zipCode;
 
   public long getId() {
@@ -40,12 +39,12 @@ public class Weather {
     this.id = id;
   }
 
-  public String getPlantState() {
-    return plantState;
+  public float getHumidity() {
+    return humidity;
   }
 
-  public void setPlantState(String plantState) {
-    this.plantState = plantState;
+  public void setHumidity(float humidity) {
+    this.humidity = humidity;
   }
 
   public boolean isRain() {

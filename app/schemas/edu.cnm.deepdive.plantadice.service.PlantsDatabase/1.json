@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "bdf33d8805673622a1a01f3a0198ea00",
+    "identityHash": "1dadf3f35f33a4199062d0168702a353",
     "entities": [
       {
         "tableName": "Plant",
@@ -109,7 +109,7 @@
       },
       {
         "tableName": "Weather",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`weather_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plant_state` TEXT, `rain` INTEGER NOT NULL, `timestamp` INTEGER, `zip_code` INTEGER NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`weather_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `humidity` REAL NOT NULL, `rain` INTEGER NOT NULL, `timestamp` INTEGER, `zip_code` INTEGER NOT NULL)",
         "fields": [
           {
             "fieldPath": "id",
@@ -118,10 +118,10 @@
             "notNull": true
           },
           {
-            "fieldPath": "plantState",
-            "columnName": "plant_state",
-            "affinity": "TEXT",
-            "notNull": false
+            "fieldPath": "humidity",
+            "columnName": "humidity",
+            "affinity": "REAL",
+            "notNull": true
           },
           {
             "fieldPath": "rain",
@@ -164,7 +164,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bdf33d8805673622a1a01f3a0198ea00')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1dadf3f35f33a4199062d0168702a353')"
     ]
   }
 }

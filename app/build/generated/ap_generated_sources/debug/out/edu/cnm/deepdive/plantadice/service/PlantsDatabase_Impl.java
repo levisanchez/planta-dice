@@ -44,10 +44,10 @@ public final class PlantsDatabase_Impl extends PlantsDatabase {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Plant` (`plant_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `water_frequency_days` INTEGER NOT NULL, `location_outdoor` INTEGER NOT NULL, `name` TEXT, `zip_code` INTEGER NOT NULL)");
         _db.execSQL("CREATE INDEX IF NOT EXISTS `index_Plant_zip_code` ON `Plant` (`zip_code`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `PlantHistory` (`plant_history_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plant_state` TEXT, `water_confirm` INTEGER NOT NULL, `timestamp` INTEGER, FOREIGN KEY(`plant_history_id`) REFERENCES `Plant`(`plant_id`) ON UPDATE NO ACTION ON DELETE SET NULL )");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Weather` (`weather_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plant_state` TEXT, `rain` INTEGER NOT NULL, `timestamp` INTEGER, `zip_code` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Weather` (`weather_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `humidity` REAL NOT NULL, `rain` INTEGER NOT NULL, `timestamp` INTEGER, `zip_code` INTEGER NOT NULL)");
         _db.execSQL("CREATE INDEX IF NOT EXISTS `index_Weather_zip_code` ON `Weather` (`zip_code`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'bdf33d8805673622a1a01f3a0198ea00')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1dadf3f35f33a4199062d0168702a353')");
       }
 
       @Override
@@ -127,7 +127,7 @@ public final class PlantsDatabase_Impl extends PlantsDatabase {
         }
         final HashMap<String, TableInfo.Column> _columnsWeather = new HashMap<String, TableInfo.Column>(5);
         _columnsWeather.put("weather_id", new TableInfo.Column("weather_id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsWeather.put("plant_state", new TableInfo.Column("plant_state", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWeather.put("humidity", new TableInfo.Column("humidity", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeather.put("rain", new TableInfo.Column("rain", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeather.put("timestamp", new TableInfo.Column("timestamp", "INTEGER", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeather.put("zip_code", new TableInfo.Column("zip_code", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -143,7 +143,7 @@ public final class PlantsDatabase_Impl extends PlantsDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "bdf33d8805673622a1a01f3a0198ea00", "3925b96b69f51b67bb65eb572b5e045f");
+    }, "1dadf3f35f33a4199062d0168702a353", "bfaaa2d334dded009b9e0401a27d2041");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

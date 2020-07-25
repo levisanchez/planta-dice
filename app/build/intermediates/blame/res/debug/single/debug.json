@@ -8,6 +8,10 @@
         "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/layout/fragment_dashboard.xml"
     },
     {
+        "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/raw_plants.csv.flat",
+        "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/raw/plants.csv"
+    },
+    {
         "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },

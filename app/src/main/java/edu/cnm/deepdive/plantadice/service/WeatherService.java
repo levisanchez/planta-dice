@@ -7,19 +7,28 @@ import edu.cnm.deepdive.plantadice.model.entity.Weather;
 import io.reactivex.Single;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
+import okhttp3.logging.HttpLoggingInterceptor.Level;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 
 public interface WeatherService {
 
-  @GET("api/current/")
-  Single<Weather.SearchResult> getSearchResult(
-      @Header("Authorization") String authHeader, @Query("q") String subject);
+  @GET("current/us.{zipCode}")
+  Single<Weather> getWeather(
+      @Path("zipCode") String zipCode,
+      @Query("app_id") String appId, @Query("app_key") String appKey);
+
+//  @GET("forecast/us.{zipCode}")
+//  Single<Weather.SearchResult> getSearchResult(
+//      @Path("zipCode") String zipCode,
+//      @Query("app_id") String appId, @Query("app_key") String appKey);
+
 
   static WeatherService getInstance() {
     return InstanceHolder.INSTANCE;
@@ -34,7 +43,7 @@ public interface WeatherService {
           .excludeFieldsWithoutExposeAnnotation()
           .create();
       HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-      interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+      interceptor.setLevel(BuildConfig.DEBUG ? Level.BODY : Level.BASIC);
       OkHttpClient client = new OkHttpClient.Builder()
           .addInterceptor(interceptor)
           .build();

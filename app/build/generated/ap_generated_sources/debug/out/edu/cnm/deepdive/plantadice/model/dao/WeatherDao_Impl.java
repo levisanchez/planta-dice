@@ -4,6 +4,7 @@ import android.database.Cursor;
 import androidx.lifecycle.LiveData;
 import androidx.room.EmptyResultSetException;
 import androidx.room.EntityDeletionOrUpdateAdapter;
+import androidx.room.EntityInsertionAdapter;
 import androidx.room.RoomDatabase;
 import androidx.room.RoomSQLiteQuery;
 import androidx.room.RxRoom;
@@ -20,6 +21,7 @@ import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -28,12 +30,37 @@ import java.util.concurrent.Callable;
 public final class WeatherDao_Impl implements WeatherDao {
   private final RoomDatabase __db;
 
+  private final EntityInsertionAdapter<Weather> __insertionAdapterOfWeather;
+
   private final EntityDeletionOrUpdateAdapter<Weather> __deletionAdapterOfWeather;
 
   private final EntityDeletionOrUpdateAdapter<Weather> __updateAdapterOfWeather;
 
   public WeatherDao_Impl(RoomDatabase __db) {
     this.__db = __db;
+    this.__insertionAdapterOfWeather = new EntityInsertionAdapter<Weather>(__db) {
+      @Override
+      public String createQuery() {
+        return "INSERT OR ABORT INTO `Weather` (`weather_id`,`humidity`,`rain`,`timestamp`,`zip_code`) VALUES (nullif(?, 0),?,?,?,?)";
+      }
+
+      @Override
+      public void bind(SupportSQLiteStatement stmt, Weather value) {
+        stmt.bindLong(1, value.getId());
+        stmt.bindDouble(2, value.getHumidity());
+        final int _tmp;
+        _tmp = value.isRain() ? 1 : 0;
+        stmt.bindLong(3, _tmp);
+        final Long _tmp_1;
+        _tmp_1 = PlantsDatabase.Converters.dateToLong(value.getTimestamp());
+        if (_tmp_1 == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindLong(4, _tmp_1);
+        }
+        stmt.bindLong(5, value.getZipCode());
+      }
+    };
     this.__deletionAdapterOfWeather = new EntityDeletionOrUpdateAdapter<Weather>(__db) {
       @Override
       public String createQuery() {
@@ -48,17 +75,13 @@ public final class WeatherDao_Impl implements WeatherDao {
     this.__updateAdapterOfWeather = new EntityDeletionOrUpdateAdapter<Weather>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `Weather` SET `weather_id` = ?,`plant_state` = ?,`rain` = ?,`timestamp` = ?,`zip_code` = ? WHERE `weather_id` = ?";
+        return "UPDATE OR ABORT `Weather` SET `weather_id` = ?,`humidity` = ?,`rain` = ?,`timestamp` = ?,`zip_code` = ? WHERE `weather_id` = ?";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, Weather value) {
         stmt.bindLong(1, value.getId());
-        if (value.getPlantState() == null) {
-          stmt.bindNull(2);
-        } else {
-          stmt.bindString(2, value.getPlantState());
-        }
+        stmt.bindDouble(2, value.getHumidity());
         final int _tmp;
         _tmp = value.isRain() ? 1 : 0;
         stmt.bindLong(3, _tmp);
@@ -73,6 +96,57 @@ public final class WeatherDao_Impl implements WeatherDao {
         stmt.bindLong(6, value.getId());
       }
     };
+  }
+
+  @Override
+  public Single<Long> insert(final Weather weather) {
+    return Single.fromCallable(new Callable<Long>() {
+      @Override
+      public Long call() throws Exception {
+        __db.beginTransaction();
+        try {
+          long _result = __insertionAdapterOfWeather.insertAndReturnId(weather);
+          __db.setTransactionSuccessful();
+          return _result;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    });
+  }
+
+  @Override
+  public Single<List<Long>> insert(final Weather... weathers) {
+    return Single.fromCallable(new Callable<List<Long>>() {
+      @Override
+      public List<Long> call() throws Exception {
+        __db.beginTransaction();
+        try {
+          List<Long> _result = __insertionAdapterOfWeather.insertAndReturnIdsList(weathers);
+          __db.setTransactionSuccessful();
+          return _result;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    });
+  }
+
+  @Override
+  public Single<List<Long>> insert(final Collection<Weather> weathers) {
+    return Single.fromCallable(new Callable<List<Long>>() {
+      @Override
+      public List<Long> call() throws Exception {
+        __db.beginTransaction();
+        try {
+          List<Long> _result = __insertionAdapterOfWeather.insertAndReturnIdsList(weathers);
+          __db.setTransactionSuccessful();
+          return _result;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    });
   }
 
   @Override
@@ -121,7 +195,7 @@ public final class WeatherDao_Impl implements WeatherDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "weather_id");
-          final int _cursorIndexOfPlantState = CursorUtil.getColumnIndexOrThrow(_cursor, "plant_state");
+          final int _cursorIndexOfHumidity = CursorUtil.getColumnIndexOrThrow(_cursor, "humidity");
           final int _cursorIndexOfRain = CursorUtil.getColumnIndexOrThrow(_cursor, "rain");
           final int _cursorIndexOfTimestamp = CursorUtil.getColumnIndexOrThrow(_cursor, "timestamp");
           final int _cursorIndexOfZipCode = CursorUtil.getColumnIndexOrThrow(_cursor, "zip_code");
@@ -132,9 +206,9 @@ public final class WeatherDao_Impl implements WeatherDao {
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
             _item.setId(_tmpId);
-            final String _tmpPlantState;
-            _tmpPlantState = _cursor.getString(_cursorIndexOfPlantState);
-            _item.setPlantState(_tmpPlantState);
+            final float _tmpHumidity;
+            _tmpHumidity = _cursor.getFloat(_cursorIndexOfHumidity);
+            _item.setHumidity(_tmpHumidity);
             final boolean _tmpRain;
             final int _tmp;
             _tmp = _cursor.getInt(_cursorIndexOfRain);
@@ -183,7 +257,7 @@ public final class WeatherDao_Impl implements WeatherDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "weather_id");
-          final int _cursorIndexOfPlantState = CursorUtil.getColumnIndexOrThrow(_cursor, "plant_state");
+          final int _cursorIndexOfHumidity = CursorUtil.getColumnIndexOrThrow(_cursor, "humidity");
           final int _cursorIndexOfRain = CursorUtil.getColumnIndexOrThrow(_cursor, "rain");
           final int _cursorIndexOfTimestamp = CursorUtil.getColumnIndexOrThrow(_cursor, "timestamp");
           final int _cursorIndexOfZipCode = CursorUtil.getColumnIndexOrThrow(_cursor, "zip_code");
@@ -194,9 +268,9 @@ public final class WeatherDao_Impl implements WeatherDao {
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
             _item.setId(_tmpId);
-            final String _tmpPlantState;
-            _tmpPlantState = _cursor.getString(_cursorIndexOfPlantState);
-            _item.setPlantState(_tmpPlantState);
+            final float _tmpHumidity;
+            _tmpHumidity = _cursor.getFloat(_cursorIndexOfHumidity);
+            _item.setHumidity(_tmpHumidity);
             final boolean _tmpRain;
             final int _tmp;
             _tmp = _cursor.getInt(_cursorIndexOfRain);
@@ -246,7 +320,7 @@ public final class WeatherDao_Impl implements WeatherDao {
           final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
           try {
             final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "weather_id");
-            final int _cursorIndexOfPlantState = CursorUtil.getColumnIndexOrThrow(_cursor, "plant_state");
+            final int _cursorIndexOfHumidity = CursorUtil.getColumnIndexOrThrow(_cursor, "humidity");
             final int _cursorIndexOfRain = CursorUtil.getColumnIndexOrThrow(_cursor, "rain");
             final int _cursorIndexOfTimestamp = CursorUtil.getColumnIndexOrThrow(_cursor, "timestamp");
             final int _cursorIndexOfZipCode = CursorUtil.getColumnIndexOrThrow(_cursor, "zip_code");
@@ -256,9 +330,9 @@ public final class WeatherDao_Impl implements WeatherDao {
               final long _tmpId;
               _tmpId = _cursor.getLong(_cursorIndexOfId);
               _result.setId(_tmpId);
-              final String _tmpPlantState;
-              _tmpPlantState = _cursor.getString(_cursorIndexOfPlantState);
-              _result.setPlantState(_tmpPlantState);
+              final float _tmpHumidity;
+              _tmpHumidity = _cursor.getFloat(_cursorIndexOfHumidity);
+              _result.setHumidity(_tmpHumidity);
               final boolean _tmpRain;
               final int _tmp;
               _tmp = _cursor.getInt(_cursorIndexOfRain);
