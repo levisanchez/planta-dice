@@ -25,16 +25,16 @@ public class HomeSelectionFragment extends Fragment {
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
-    String myArg = HomeSelectionFragmentArgs.fromBundle(getArguments()).getMyArg();
-    TextView textView = view.findViewById(R.id.text_home);
-    textView.setText(getString(R.string.hello_home_second, myArg));
+//    String myArg = HomeSelectionFragmentArgs.fromBundle(getArguments()).getMyArg();
+//    TextView textView = view.findViewById(R.id.text_dashboard);
+//    textView.setText(getString(R.string.hello_home_second, myArg));
 
-    view.findViewById(R.id.add_plant_button).setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        NavHostFragment.findNavController(HomeSelectionFragment.this)
-            .navigate(R.id.action_HomeSecondFragment_to_HomeFragment);
-      }
-    });
+//    view.findViewById(R.id.add_plant_button).setOnClickListener(new View.OnClickListener() {
+//      @Override
+//      public void onClick(View view) {
+//        NavHostFragment.findNavController(HomeSelectionFragment.this)
+//            .navigate(R.id.action_HomeSecondFragment_to_HomeFragment);
+//      }
+//    });
   }
 }
