@@ -64,16 +64,16 @@ public abstract class PlantsDatabase extends RoomDatabase {
 
   private static class PlantHistoriesCallback extends Callback {
 
-    @Override
-    public void onCreate(@NonNull SupportSQLiteDatabase db) {
-      super.onCreate(db);
-      try {
-        Map<Plant, List<Weather>> parseFile(R.raw.plants);
-//        persist(map);
-      } catch (IOException e){
-        throw new RuntimeException(e);
-      }
-    }
+//    @Override
+//    public void onCreate(@NonNull SupportSQLiteDatabase db) {
+//      super.onCreate(db);
+//      try {
+//        Map<Plant, List<Weather>> parseFile(R.raw.plants);
+////        persist(map);
+//      } catch (IOException e){
+//        throw new RuntimeException(e);
+//      }
+//    }
 //    @SuppressLint("CheckResult")
 //    private void persist(Map<Plant, List<Weather>> map) {
 //      PlantsDatabase database = PlantsDatabase.getInstance();
@@ -93,14 +93,14 @@ public abstract class PlantsDatabase extends RoomDatabase {
 //              long plantId = idIterator.next();
 //              for (Weather weather : map.getOrDefault(plantIterator.next(), Collections.emptyList())) {
 //                plantId.getPlantId(plantId);
-//                weathers.add(weather);
+//                plants.add(plant);
 //              }
 //            }
 //            weathers.addAll(unattributed);
 //            return weatherDao.insert(weathers);
 //          })
 //          .subscribe(
-//              (weatherIds) -> {},
+//              (plantIds) -> {},
 //              (throwable) -> {throw new RuntimeException(throwable);}
 //          );
 //    }
