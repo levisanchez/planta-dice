@@ -28,6 +28,11 @@ import edu.cnm.deepdive.plantadice.R;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * The permissions fragment prompts the user for app permissions and remembers preferences.This
+ * app needs user permission to access the alarm manager. It also needs inherited permission by
+ * device to access the internet.
+ */
 public class PermissionsFragment extends DialogFragment {
 
   private static final String PERMISSIONS_TO_EXPLAIN_KEY = "permissions_to_explain";
@@ -35,6 +40,15 @@ public class PermissionsFragment extends DialogFragment {
   private static final String EXPLANATION_KEY_SUFFIX = "_explanation";
   private static final String PERMISSION_DELIMITER = "\\.";
 
+  /**
+   * Create instance permissions fragment.
+   *
+   * @param permissionsToExplain Explains what permissions are needed to run the app if the user
+   *                             doesn't grant access first time. If user declines access this won't
+   *                             repeat.
+   * @param permissionsToRequest Requests initial app permissions from user
+   * @return the permissions fragment
+   */
   @NonNull
   public static PermissionsFragment createInstance(@NonNull String[] permissionsToExplain,
       String[] permissionsToRequest) {
@@ -105,8 +119,16 @@ public class PermissionsFragment extends DialogFragment {
     return (builder.length() > 0) ? builder.substring(0, builder.length() - 1) : "";
   }
 
+  /**
+   * Listens for permission to be granted for usage.
+   */
   public interface OnAcknowledgeListener {
 
+    /**
+     * On acknowledge.
+     * Determines if the app can further a permissions request.
+     * @param permissionToRequest the permission to request
+     */
     void onAcknowledge(String[] permissionToRequest);
 
   }

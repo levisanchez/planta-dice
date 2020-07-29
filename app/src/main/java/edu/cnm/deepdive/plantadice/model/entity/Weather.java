@@ -11,6 +11,9 @@ import java.util.Date;
 import java.util.List;
 
 
+/**
+ * The type Weather.
+ */
 @Entity
 public class Weather {
 
@@ -31,55 +34,118 @@ public class Weather {
   @ColumnInfo(name = "zip_code", index = true)
   private int zipCode;
 
+  /**
+   * Gets id.
+   *
+   * @return the id
+   */
   public long getId() {
     return id;
   }
 
+  /**
+   * Sets id.
+   *
+   * @param id the id
+   */
   public void setId(long id) {
     this.id = id;
   }
 
+  /**
+   * Gets humidity.
+   *
+   * @return the humidity
+   */
   public float getHumidity() {
     return humidity;
   }
 
+  /**
+   * Sets humidity.
+   *
+   * @param humidity the humidity
+   */
   public void setHumidity(float humidity) {
     this.humidity = humidity;
   }
 
+  /**
+   * Is rain boolean.
+   *
+   * @return the boolean
+   */
   public boolean isRain() {
     return rain;
   }
 
+  /**
+   * Sets rain.
+   *
+   * @param rain the rain
+   */
   public void setRain(boolean rain) {
     this.rain = rain;
   }
 
+  /**
+   * Gets timestamp.
+   *
+   * @return the timestamp
+   */
   public Date getTimestamp() {
     return timestamp;
   }
 
+  /**
+   * Sets timestamp.
+   *
+   * @param timestamp the timestamp
+   */
   public void setTimestamp(Date timestamp) {
     this.timestamp = timestamp;
   }
 
+  /**
+   * Gets zip code.
+   *
+   * @return the zip code
+   */
   public int getZipCode() {
     return zipCode;
   }
 
+  /**
+   * Sets zip code.
+   *
+   * @param zipCode the zip code
+   */
   public void setZipCode(int zipCode) {
     this.zipCode = zipCode;
   }
 
+  /**
+   * The type Search result.
+   */
   public static class SearchResult {
 
     @Expose
     private List<Weather> data;
 
+    /**
+     * Gets data.
+     *
+     * @return the data
+     */
     public List<Weather> getData() {
       return data;
     }
 
+    /**
+     * Sets data.
+     *
+     * @param data the data
+     */
     public void setData(List<Weather> data) {
       this.data = data;
     }

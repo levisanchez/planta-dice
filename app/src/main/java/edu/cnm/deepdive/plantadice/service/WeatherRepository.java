@@ -11,6 +11,9 @@ import io.reactivex.schedulers.Schedulers;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * The type Weather repository.
+ */
 public class WeatherRepository {
 
   private final Context context;
@@ -18,6 +21,11 @@ public class WeatherRepository {
   private final PlantsDatabase database;
   private final WeatherDao weatherDao;
 
+  /**
+   * Instantiates a new Weather repository.
+   *
+   * @param context the context
+   */
   public WeatherRepository(Context context) {
     this.context = context;
     weatherService = WeatherService.getInstance();
@@ -27,6 +35,12 @@ public class WeatherRepository {
   }
 
 
+  /**
+   * Gets current.
+   *
+   * @param zipCode the zip code
+   * @return the current
+   */
   public Single<Weather> getCurrent(int zipCode) {
     @SuppressLint("DefaultLocale")
     String zipCodeString = String.format("%05d", zipCode);
@@ -43,6 +57,11 @@ public class WeatherRepository {
         .subscribeOn(Schedulers.io());
   }
 
+  /**
+   * Get all live data.
+   *
+   * @return the live data
+   */
   public LiveData<List<Weather>> getAll(){
     return weatherDao.selectAll();
   }

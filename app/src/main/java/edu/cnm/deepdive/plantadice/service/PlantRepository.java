@@ -6,6 +6,9 @@ import edu.cnm.deepdive.plantadice.model.dao.PlantDao;
 import edu.cnm.deepdive.plantadice.model.entity.Plant;
 import java.util.List;
 
+/**
+ * The type Plant repository.
+ */
 public class PlantRepository {
 
   private final Context context;
@@ -13,6 +16,11 @@ public class PlantRepository {
   private final PlantDao plantDao;
 
 
+  /**
+   * Instantiates a new Plant repository.
+   *
+   * @param context the context
+   */
   public PlantRepository(Context context) {
     this.context = context;
     database = PlantsDatabase.getInstance();
@@ -20,6 +28,11 @@ public class PlantRepository {
 
   }
 
+  /**
+   * Gets all.
+   *
+   * @return the all
+   */
   public LiveData<List<Plant>> getAll() {
     return plantDao.selectAll();
 

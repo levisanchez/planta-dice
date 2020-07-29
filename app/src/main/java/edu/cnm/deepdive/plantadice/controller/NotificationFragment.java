@@ -13,6 +13,9 @@ import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.plantadice.R;
 import edu.cnm.deepdive.plantadice.viewmodel.NotificationsViewModel;
 
+/**
+ * The notification Fragment is where notifications are displayed when it is time for a plant to be watered.
+ */
 public class NotificationFragment extends Fragment {
 
   private NotificationsViewModel notificationsViewModel;

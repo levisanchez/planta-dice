@@ -10,6 +10,9 @@ import io.reactivex.Single;
 import io.reactivex.schedulers.Schedulers;
 import java.util.List;
 
+/**
+ * The type Plant history repository.
+ */
 public class PlantHistoryRepository {
 
   private final Context context;
@@ -18,6 +21,11 @@ public class PlantHistoryRepository {
   private final PlantHistoryDao plantHistoryDao;
 
 
+  /**
+   * Instantiates a new Plant history repository.
+   *
+   * @param context the context
+   */
   public PlantHistoryRepository(Context context) {
     this.context = context;
     database = PlantsDatabase.getInstance();
@@ -25,15 +33,32 @@ public class PlantHistoryRepository {
     plantHistoryDao = database.getPlantHistoryDao();
   }
 
+  /**
+   * Gets all.
+   *
+   * @return the all
+   */
   public LiveData<List<PlantHistory>> getAll() {
     return plantHistoryDao.selectAll();
   }
 
+  /**
+   * Get single.
+   *
+   * @param id the id
+   * @return the single
+   */
   public Single<PlantHistory> get(long id) {
     return plantHistoryDao.selectById(id)
         .subscribeOn(Schedulers.io());
   }
 
+  /**
+   * Save completable.
+   *
+   * @param plantHistory the plant history
+   * @return the completable
+   */
   public Completable save(PlantHistory plantHistory) {
     if (plantHistory.getId() == 0){
       return Completable.fromSingle(plantHistoryDao.insert(plantHistory))
@@ -44,6 +69,13 @@ public class PlantHistoryRepository {
     }
 
   }
+
+  /**
+   * Delete completable.
+   *
+   * @param plantHistory the plant history
+   * @return the completable
+   */
   public Completable delete(PlantHistory plantHistory) {
     if (plantHistory.getId() == 0) {
       return Completable.fromAction(() -> {})

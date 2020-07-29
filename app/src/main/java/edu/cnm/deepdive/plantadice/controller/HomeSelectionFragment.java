@@ -11,6 +11,10 @@ import androidx.navigation.fragment.NavHostFragment;
 import edu.cnm.deepdive.plantadice.R;
 
 
+/**
+ * The type HomeSelection fragment is currently a place holder a future integration
+ * 'Adding Plant' functionality.
+ */
 public class HomeSelectionFragment extends Fragment {
 
   @Override

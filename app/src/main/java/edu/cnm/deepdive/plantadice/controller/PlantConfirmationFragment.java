@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 
 import edu.cnm.deepdive.plantadice.R;
 
+/**
+ * The type Plant confirmation fragment.
+ */
 public class PlantConfirmationFragment extends Fragment {
 
   // TODO: Rename parameter arguments, choose names that match
@@ -19,6 +22,9 @@ public class PlantConfirmationFragment extends Fragment {
 //  private String mParam1;
 //  private String mParam2;
 
+  /**
+   * Instantiates a new Plant confirmation fragment.
+   */
   public PlantConfirmationFragment() {
     // Required empty public constructor
   }

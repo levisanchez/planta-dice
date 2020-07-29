@@ -17,8 +17,19 @@ import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 
+/**
+ * The interface Weather service.
+ */
 public interface WeatherService {
 
+  /**
+   * Gets weather.
+   *
+   * @param zipCode the zip code
+   * @param appId   the app id
+   * @param appKey  the app key
+   * @return the weather
+   */
   @GET("current/us.{zipCode}")
   Single<Weather> getWeather(
       @Path("zipCode") String zipCode,
@@ -30,10 +41,18 @@ public interface WeatherService {
 //      @Query("app_id") String appId, @Query("app_key") String appKey);
 
 
+  /**
+   * Gets instance.
+   *
+   * @return the instance
+   */
   static WeatherService getInstance() {
     return InstanceHolder.INSTANCE;
   }
 
+  /**
+   * The type Instance holder.
+   */
   class InstanceHolder {
 
     private static final WeatherService INSTANCE;

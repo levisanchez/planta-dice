@@ -15,6 +15,16 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 
 >_As someone who has trouble distinguishing colors, particularly between green and brown, I need an app that alerts me when my plants need to be watered so that they survive and continue to adorn my household._
 
+## Current State of App
+
+The App is currently still in mid-development. The WeatherService class in the service directory does make successful calls to the API Weather service. The PlantsDatabase class also pulls successfully from the quotes.csv file in the raw directory under resources. The fragments are not complete and the App isn't functional. It will build successfully, but does not function.  The next steps are to complete the navigation and fragments to have a functioning user interface. The bottom navigation does change between fragments, but there is no functionality.
+
+The order of importance for enhancements are:
+
+* Functional buttons and navigation
+* Recycler view for plants history fragment
+* Ability to add plants to database from floating button on any screen
+
 ## Functionality
 
 * App will allow user to input plant type and if it is located indoors or outdoors
@@ -92,6 +102,27 @@ The Planta Dice app reminds users to water their plants on a regular basis. It t
 * Dew / humidity taken into account for outdoor plants
 * Seasonal pattern recognition for varying watering requirements
 * User able to log addition of fertilizer and noted on plant history
+
+## Instructions to build
+
+* Refer to Github repository for project at [https://github.com/levisanchez/planta-dice](https://github.com/levisanchez/planta-dice)
+* Click on the green Code button
+* Ensure that Clone with SSH is selected
+    * If HTTPS is selected, click on SSH in the upper right-hand corner of dialog box.
+* Click on the clipboard icon next to the SSH key value to copy the key
+* Refer to your IDE and choose to create your project from version control
+* Specify that the Version Control is Git
+* Paste the key into URL field and click open
+* Once fully loaded, click on Play
+    * This will build the app and open it in your emulator or attached device
+    
+## Basic user instructions
+
+* Once the app is launched, click you will land on the HomeScreen fragment. 
+* To add a plant click on the floating plus button in the lower right-hand corner
+    * This will display a list of plants to add including adding the ZIP code
+* To review history of plants being watered, click on History from the bottom navigation. 
+* When it is time to have a plant watered, a notification will show up in the notifications tab in the bottom navigation. 
 
 ## License information
  

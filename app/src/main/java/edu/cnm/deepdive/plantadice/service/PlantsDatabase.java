@@ -30,6 +30,9 @@ import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
+/**
+ * The type Plants database.
+ */
 @Database(
     entities = {Plant.class, PlantHistory.class, Weather.class},
     version = 1,
@@ -42,16 +45,41 @@ public abstract class PlantsDatabase extends RoomDatabase {
 
   private static Application context;
 
+  /**
+   * Sets context.
+   *
+   * @param context the context
+   */
   public static void setContext(Application context) {
     PlantsDatabase.context = context;
   }
 
+  /**
+   * Gets plant dao.
+   *
+   * @return the plant dao
+   */
   public abstract PlantDao getPlantDao();
 
+  /**
+   * Gets plant history dao.
+   *
+   * @return the plant history dao
+   */
   public abstract PlantHistoryDao getPlantHistoryDao();
 
+  /**
+   * Gets weather dao.
+   *
+   * @return the weather dao
+   */
   public abstract WeatherDao getWeatherDao();
 
+  /**
+   * Gets instance.
+   *
+   * @return the instance
+   */
   public static PlantsDatabase getInstance() {
     return InstanceHolder.INSTANCE;
   }
@@ -101,11 +129,28 @@ public abstract class PlantsDatabase extends RoomDatabase {
 
   }
 
+  /**
+   * The type Converters.
+   */
   public static class Converters {
+
+    /**
+     * Date to long long.
+     *
+     * @param value the value
+     * @return the long
+     */
     @TypeConverter //annotation for a method
     public static Long dateToLong(Date value) { //Date Java util not sql
       return (value != null) ? value.getTime() : null;
     }
+
+    /**
+     * Long to date date.
+     *
+     * @param value the value
+     * @return the date
+     */
     @TypeConverter
     public static Date longToDate(Long value) {
       return (value != null) ? new Date(value) : null;

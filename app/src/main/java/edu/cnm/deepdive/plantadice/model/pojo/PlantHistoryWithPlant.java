@@ -6,15 +6,28 @@ import edu.cnm.deepdive.plantadice.model.entity.Plant;
 import edu.cnm.deepdive.plantadice.model.entity.PlantHistory;
 
 
+/**
+ * The type Plant history with plant.
+ */
 public class PlantHistoryWithPlant extends PlantHistory {
 
   @Relation(entity = Plant.class, entityColumn = "plant_id", parentColumn = "plant_id")
   private Plant plant;
 
+  /**
+   * Gets plant.
+   *
+   * @return the plant
+   */
   public Plant getPlant() {
     return plant;
   }
 
+  /**
+   * Sets plant.
+   *
+   * @param plant the plant
+   */
   public void setPlant(Plant plant) {
     this.plant = plant;
   }

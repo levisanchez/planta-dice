@@ -15,6 +15,10 @@ import androidx.navigation.fragment.NavHostFragment;
 import edu.cnm.deepdive.plantadice.R;
 import edu.cnm.deepdive.plantadice.viewmodel.HomeViewModel;
 
+/**
+ * The HomeFragment functions as the beginning page of the app.
+ * It is also the fragment used when a user clicks the home button
+ */
 public class HomeFragment extends Fragment implements OnClickListener {
 
   private HomeViewModel homeViewModel;

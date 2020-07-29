@@ -12,6 +12,9 @@ import edu.cnm.deepdive.plantadice.model.entity.Weather;
 import edu.cnm.deepdive.plantadice.service.WeatherRepository;
 import io.reactivex.disposables.CompositeDisposable;
 
+/**
+ * The type Main view model.
+ */
 public class MainViewModel extends AndroidViewModel implements LifecycleObserver {
 
   private final WeatherRepository weatherRepository;
@@ -19,6 +22,11 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
   private final MutableLiveData<Throwable> throwable;
   private final CompositeDisposable pending;
 
+  /**
+   * Instantiates a new Main view model.
+   *
+   * @param application the application
+   */
   public MainViewModel(@NonNull Application application) {
     super(application);
     weatherRepository = new WeatherRepository(application);
@@ -27,14 +35,29 @@ public class MainViewModel extends AndroidViewModel implements LifecycleObserver
     pending = new CompositeDisposable();
   }
 
+  /**
+   * Gets weather.
+   *
+   * @return the weather
+   */
   public LiveData<Weather> getWeather() {
     return weather;
   }
 
+  /**
+   * Gets throwable.
+   *
+   * @return the throwable
+   */
   public LiveData<Throwable> getThrowable() {
     return throwable;
   }
 
+  /**
+   * Update weather.
+   *
+   * @param zipCode the zip code
+   */
   public void updateWeather(int zipCode) {
     pending.add(
         weatherRepository.getCurrent(zipCode)

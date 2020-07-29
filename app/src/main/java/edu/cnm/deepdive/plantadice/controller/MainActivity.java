@@ -13,6 +13,9 @@ import edu.cnm.deepdive.plantadice.R;
 import edu.cnm.deepdive.plantadice.viewmodel.MainViewModel;
 
 
+/**
+ * The Main Activity is the primary format for all fragment displays in the controller.
+ */
 public class MainActivity extends AppCompatActivity {
 
   @Override

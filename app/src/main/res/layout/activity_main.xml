@@ -13,7 +13,7 @@
     android:src="@drawable/ic_add_black_24dp"
     app:useCompatPadding="true"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"/>
+    app:layout_constraintBottom_toTopOf="@id/nav_view"/>
 
   <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/nav_view"

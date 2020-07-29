@@ -13,6 +13,9 @@ import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.plantadice.R;
 import edu.cnm.deepdive.plantadice.viewmodel.PlantHistoryViewModel;
 
+/**
+ * The type Plant history fragment.
+ */
 public class PlantHistoryFragment extends Fragment {
 
   private PlantHistoryViewModel plantHistoryViewModel;
