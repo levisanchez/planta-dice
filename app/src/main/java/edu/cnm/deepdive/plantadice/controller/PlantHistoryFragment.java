@@ -11,19 +11,19 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import edu.cnm.deepdive.plantadice.R;
-import edu.cnm.deepdive.plantadice.viewmodel.DashboardViewModel;
+import edu.cnm.deepdive.plantadice.viewmodel.PlantHistoryViewModel;
 
 public class PlantHistoryFragment extends Fragment {
 
-  private DashboardViewModel dashboardViewModel;
+  private PlantHistoryViewModel plantHistoryViewModel;
 
   public View onCreateView(@NonNull LayoutInflater inflater,
       ViewGroup container, Bundle savedInstanceState) {
-    dashboardViewModel =
-        ViewModelProviders.of(this).get(DashboardViewModel.class);
-    View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+    plantHistoryViewModel =
+        ViewModelProviders.of(this).get(PlantHistoryViewModel.class);
+    View root = inflater.inflate(R.layout.fragment_history, container, false);
     final TextView textView = root.findViewById(R.id.text_dashboard);
-    dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+    plantHistoryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
       @Override
       public void onChanged(@Nullable String s) {
         textView.setText(s);

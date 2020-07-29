@@ -1,14 +1,14 @@
 package edu.cnm.deepdive.plantadice.service;
 
-import android.annotation.SuppressLint;
 import android.app.Application;
+import android.content.Context;
+import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverter;
 import androidx.room.TypeConverters;
-import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import edu.cnm.deepdive.plantadice.R;
 import edu.cnm.deepdive.plantadice.model.dao.PlantDao;
@@ -20,12 +20,15 @@ import edu.cnm.deepdive.plantadice.model.entity.Weather;
 import edu.cnm.deepdive.plantadice.service.PlantsDatabase.Converters;
 import io.reactivex.schedulers.Schedulers;
 import java.io.IOException;
-import java.util.Collections;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
 
 @Database(
     entities = {Plant.class, PlantHistory.class, Weather.class},
@@ -57,53 +60,44 @@ public abstract class PlantsDatabase extends RoomDatabase {
 
     private static final PlantsDatabase INSTANCE =
         Room.databaseBuilder(context, PlantsDatabase.class, DB_NAME)
-            .addCallback(new PlantHistoriesCallback())
+            .addCallback(new PlantHistoriesCallback(context))
             .build();
 
   }
 
   private static class PlantHistoriesCallback extends Callback {
 
-//    @Override
-//    public void onCreate(@NonNull SupportSQLiteDatabase db) {
-//      super.onCreate(db);
-//      try {
-//        Map<Plant, List<Weather>> parseFile(R.raw.plants);
-////        persist(map);
-//      } catch (IOException e){
-//        throw new RuntimeException(e);
-//      }
-//    }
-//    @SuppressLint("CheckResult")
-//    private void persist(Map<Plant, List<Weather>> map) {
-//      PlantsDatabase database = PlantsDatabase.getInstance();
-//      PlantDao plantDao = database.getPlantDao();
-//      WeatherDao weatherDao = database.getWeatherDao();
-//      List<Plant> plants = new LinkedList<>(map.keySet());
-//      List<Weather> unattributed = map.getOrDefault(null, Collections.emptyList());
-//      plants.remove(null);
-//      //noinspection ResultOfMethodCallIgnored
-//      plantDao.insert(plants)
-//          .subscribeOn(Schedulers.io())
-//          .flatMap((plantIds) -> {
-//            List<Weather> weathers = new LinkedList<>();
-//            Iterator<Long> idIterator = plantIds.iterator();
-//            Iterator<Plant> plantIterator = plants.iterator();
-//            while (idIterator.hasNext()) {
-//              long plantId = idIterator.next();
-//              for (Weather weather : map.getOrDefault(plantIterator.next(), Collections.emptyList())) {
-//                plantId.getPlantId(plantId);
-//                plants.add(plant);
-//              }
-//            }
-//            weathers.addAll(unattributed);
-//            return weatherDao.insert(weathers);
-//          })
-//          .subscribe(
-//              (plantIds) -> {},
-//              (throwable) -> {throw new RuntimeException(throwable);}
-//          );
-//    }
+    private final Context context;
+
+    private PlantHistoriesCallback(Context context) {
+      this.context = context;
+    }
+
+    @Override
+    public void onCreate(@NonNull SupportSQLiteDatabase db) {
+      super.onCreate(db);
+      try (
+          InputStream input = context.getResources().openRawResource(R.raw.plants);
+          Reader reader = new InputStreamReader(input);
+          CSVParser parser = new CSVParser(reader, CSVFormat.EXCEL
+              .withIgnoreEmptyLines().withIgnoreSurroundingSpaces().withFirstRecordAsHeader());
+      ) {
+        List<Plant> plants = new LinkedList<>();
+        for (CSVRecord record : parser){
+          Plant plant = new Plant();
+          plant.setName(record.get(0));
+          plant.setWaterFrequencyDays(Integer.parseInt(record.get(1)));
+          plant.setZipCode(Integer.parseInt(record.get(2)));
+          plant.setLocationOutdoor(Boolean.parseBoolean(record.get(3)));
+          plants.add(plant);
+        }
+        PlantsDatabase.getInstance().getPlantDao().insert(plants)
+            .subscribeOn(Schedulers.io())
+            .subscribe();
+      } catch (IOException e){
+        throw new RuntimeException(e);
+      }
+    }
 
   }
 

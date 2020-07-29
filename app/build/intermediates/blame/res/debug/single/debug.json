@@ -4,8 +4,8 @@
         "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/layout_fragment_dashboard.xml.flat",
-        "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/layout/fragment_dashboard.xml"
+        "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/layout_item_plant.xml.flat",
+        "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/layout/item_plant.xml"
     },
     {
         "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/raw_plants.csv.flat",
@@ -24,6 +24,10 @@
         "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/layout_fragment_history.xml.flat",
+        "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/layout/fragment_history.xml"
+    },
+    {
         "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
@@ -40,12 +44,12 @@
         "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/drawable/ic_add_black_24dp.xml"
     },
     {
-        "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/levisanchez/Desktop/bootcamp/projects/planta-dice/app/build/intermediates/res/merged/debug/layout_fragment_notifications.xml.flat",

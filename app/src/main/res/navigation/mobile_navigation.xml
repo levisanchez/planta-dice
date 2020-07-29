@@ -8,32 +8,15 @@
   <fragment
     android:id="@+id/navigation_home"
     android:label="@string/title_home"
-    android:name="edu.cnm.deepdive.plantadice.controller.HomeScreenFragment"
+    android:name="edu.cnm.deepdive.plantadice.controller.HomeFragment"
     tools:layout="@layout/fragment_home">
-
-    <action
-      android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-      app:destination="@id/navigation_home_second"/>
-  </fragment>
-  <fragment
-    android:id="@+id/navigation_home_second"
-    android:label="@string/home_second"
-    android:name="edu.cnm.deepdive.plantadice.controller.HomeSelectionFragment"
-    tools:layout="@layout/fragment_plant_selection">
-    <action
-      android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-      app:destination="@id/navigation_home"/>
-
-    <argument
-      android:name="myArg"
-      app:argType="string"/>
   </fragment>
 
   <fragment
-    android:id="@+id/navigation_dashboard"
-    android:label="@string/title_dashboard"
+    android:id="@+id/navigation_history"
+    android:label="@string/title_history"
     android:name="edu.cnm.deepdive.plantadice.controller.PlantHistoryFragment"
-    tools:layout="@layout/fragment_dashboard"/>
+    tools:layout="@layout/fragment_history"/>
 
   <fragment
     android:id="@+id/navigation_notifications"

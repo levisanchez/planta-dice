@@ -6,12 +6,14 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent">
 
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/vertical_guideline"
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/add_plant"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_percent=".5"/>
+    android:src="@drawable/ic_add_black_24dp"
+    app:useCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
 
   <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/nav_view"

@@ -28,22 +28,81 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="added floating button and bottom navigation">
+    <list default="true" id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="added some components to PlantsDatabase">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/view/PlantsAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_plant.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase_Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/ap_generated_sources/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase_Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/out/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex_archive_input_jar_hashes/debug/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/generateSafeArgsDebug/file_mappings.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/generateSafeArgsDebug/file_mappings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/javaResources0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/controller/MainActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/controller/MainActivity.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$10.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$10.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$2.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$3.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$3.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$4.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$4.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$5.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$5.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$6.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$6.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$7.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$7.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$8.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$8.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$9.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl$9.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/dao/PlantDao_Impl.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/entity/Plant.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/model/entity/Plant.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase$Converters.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase$Converters.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase$InstanceHolder.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase$InstanceHolder.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase$PlantHistoriesCallback.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase$PlantHistoriesCallback.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase_Impl$1.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase_Impl$1.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase_Impl.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/edu/cnm/deepdive/plantadice/service/PlantsDatabase_Impl.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_dashboard.xml.flat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_home.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu_bottom_nav_menu.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/navigation_mobile_navigation.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/navigation_mobile_navigation.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/HomeScreenFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PlantHistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PlantHistoryFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantsDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/DashboardViewModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/PlantHistoryViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/PlantHistoryViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/plants.csv" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/raw/plants.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +124,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -176,7 +236,7 @@
       <workItem from="1595727368698" duration="2509000" />
       <workItem from="1595811739547" duration="933000" />
       <workItem from="1595823416644" duration="2978000" />
-      <workItem from="1595889116679" duration="14190000" />
+      <workItem from="1595889116679" duration="29517000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity classes">
       <created>1593634075413</created>
@@ -262,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595914846832</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added some components to PlantsDatabase">
+      <created>1595944563900</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1595944563900</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +358,8 @@
     <MESSAGE value="Re-org files. created viewmodel package and moved fragments into controller" />
     <MESSAGE value="Added WeatherService package" />
     <MESSAGE value="added floating button and bottom navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added floating button and bottom navigation" />
+    <MESSAGE value="added some components to PlantsDatabase" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some components to PlantsDatabase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="151" key="#Project_Structure" timestamp="1593709648997">
@@ -310,11 +378,11 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="309" y="362" key="#com.intellij.fileTypes.FileTypeChooser/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595825477186" />
-    <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1595909953490">
+    <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1595958095732">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634037700" />
-    <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595909953490" />
+    <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595958095732" />
     <state x="0" y="23" key="#com.intellij.ide.util.MemberChooser/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595689478356" />
     <state x="838" y="246" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595523043355">
       <screen x="0" y="23" width="1792" height="1097" />
@@ -332,9 +400,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="662" y="456" width="549" height="223" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1594176874914" />
-    <state x="566" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595537148377">
+    <state x="566" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595947073363">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
+    <state x="566" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595947073363" />
     <state x="566" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595537148377" />
     <state x="157" y="132" width="1535" height="888" key="AVDManager" timestamp="1595688688068">
       <screen x="0" y="23" width="1792" height="1097" />
@@ -344,10 +413,11 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="474" y="391" key="AndroidCreateResourceDirectoryDialog/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595538553176" />
-    <state x="486" y="340" key="AndroidCreateResourceFileDialog" timestamp="1594048998096">
+    <state x="486" y="340" key="AndroidCreateResourceFileDialog" timestamp="1595951292288">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="486" y="340" key="AndroidCreateResourceFileDialog/0.-1057.1920.1057/-1080.-1057.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1594048998096" />
+    <state x="486" y="340" key="AndroidCreateResourceFileDialog/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595951292288" />
     <state x="1000" y="293" key="AndroidCreateXmlResourceDialog" timestamp="1595824609332">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -393,12 +463,12 @@
     </state>
     <state width="1025" height="361" key="GridCell.Tab.1.right/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.-1057.1920.1057" timestamp="1595727114362" />
     <state width="1226" height="361" key="GridCell.Tab.1.right/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595690063111" />
-    <state x="0" y="23" key="Vcs.Push.Dialog.v2" timestamp="1595914850990">
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2" timestamp="1595944567590">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634077820" />
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1593697327236" />
-    <state x="0" y="23" key="Vcs.Push.Dialog.v2/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595914850990" />
+    <state x="0" y="23" key="Vcs.Push.Dialog.v2/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595944567590" />
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595709516832" />
     <state x="0" y="23" key="chooseDestDirectoryDialog" timestamp="1593634532047">
       <screen x="0" y="23" width="1792" height="1097" />
@@ -412,9 +482,14 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="367" y="154" width="1313" height="1010" key="dock-window-1/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634045486" />
-    <state x="190" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1595688393510">
+    <state x="444" y="321" key="refactoring.ChangeSignatureDialog" timestamp="1595958105448">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
+    <state x="444" y="321" key="refactoring.ChangeSignatureDialog/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595958105448" />
+    <state x="190" y="268" width="670" height="676" key="search.everywhere.popup" timestamp="1595975491109">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="190" y="268" width="670" height="676" key="search.everywhere.popup/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595975491109" />
     <state x="190" y="268" width="670" height="676" key="search.everywhere.popup/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595688393510" />
   </component>
   <component name="XDebuggerManager">

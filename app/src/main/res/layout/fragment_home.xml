@@ -5,39 +5,22 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".controller.HomeScreenFragment">
+  tools:context=".controller.HomeFragment">
 
-<!--  Determine if you need the following navigation resources-->
-<!--  <androidx.constraintlayout.widget.Guideline-->
-<!--    android:id="@+id/vertical_guideline"-->
-<!--    android:layout_width="wrap_content"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:orientation="vertical"-->
-<!--    app:layout_constraintGuide_percent=".5"/>-->
-
-<!--  <Button-->
-<!--    android:id="@+id/add_plant_button"-->
-<!--    android:layout_width="150dp"-->
-<!--    android:layout_height="75dp"-->
-<!--    android:layout_margin="4dp"-->
-<!--    app:layout_constraintStart_toStartOf="parent"-->
-<!--    app:layout_constraintEnd_toEndOf="@id/vertical_guideline"-->
-<!--    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--    android:text="@string/add_plant"/>-->
-
-
-<!--  <Button-->
-<!--    android:id="@+id/plant_history"-->
-<!--    android:layout_width="150dp"-->
-<!--    android:layout_height="75dp"-->
-<!--    android:layout_margin="4dp"-->
-<!--    app:layout_constraintStart_toStartOf="@id/vertical_guideline"-->
-<!--    app:layout_constraintEnd_toEndOf="parent"-->
-<!--    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--    android:text="@string/review_history"/>-->
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/plant_list"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    />
 
   <com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:id="@+id/ADD_HISTORY"
+    android:id="@+id/add_plant"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:src="@drawable/ic_add_black_24dp"
@@ -45,16 +28,6 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"/>
 
-  <TextView
-    android:id="@+id/text_home"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginEnd="8dp"
-    android:textAlignment="center"
-    android:textSize="20sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

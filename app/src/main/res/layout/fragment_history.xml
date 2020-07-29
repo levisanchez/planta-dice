@@ -8,14 +8,14 @@
   tools:context=".controller.PlantHistoryFragment">
 
 
-  <com.google.android.material.floatingactionbutton.FloatingActionButton
-    android:id="@+id/ADD_HISTORY"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/ic_add_black_24dp"
-    app:useCompatPadding="true"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"/>
+<!--  <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--    android:id="@+id/add_plant"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/ic_add_black_24dp"-->
+<!--    app:useCompatPadding="true"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"/>-->
 
   <TextView
     android:id="@+id/text_dashboard"

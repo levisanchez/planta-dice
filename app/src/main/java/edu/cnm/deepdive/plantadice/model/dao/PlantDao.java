@@ -11,6 +11,7 @@ import androidx.room.Update;
 import edu.cnm.deepdive.plantadice.model.entity.Plant;
 import edu.cnm.deepdive.plantadice.model.entity.PlantHistory;
 import io.reactivex.Single;
+import java.util.Collection;
 import java.util.List;
 
 @Dao
@@ -21,6 +22,9 @@ public interface PlantDao {
 
   @Insert(onConflict = OnConflictStrategy.IGNORE)
   Single<List<Long>> insert(Plant... plants);
+
+  @Insert(onConflict = OnConflictStrategy.IGNORE)
+  Single<List<Long>> insert(Collection<Plant> plants);
 
   @Update
   Single<Integer> update(Plant...plants);

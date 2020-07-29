@@ -41,7 +41,7 @@ public final class PlantsDatabase_Impl extends PlantsDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Plant` (`plant_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `water_frequency_days` INTEGER NOT NULL, `location_outdoor` INTEGER NOT NULL, `name` TEXT, `zip_code` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Plant` (`plant_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `water_frequency_days` INTEGER NOT NULL, `location_outdoor` INTEGER NOT NULL, `name` TEXT COLLATE NOCASE, `zip_code` INTEGER NOT NULL)");
         _db.execSQL("CREATE INDEX IF NOT EXISTS `index_Plant_zip_code` ON `Plant` (`zip_code`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `PlantHistory` (`plant_history_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `plant_state` TEXT, `water_confirm` INTEGER NOT NULL, `timestamp` INTEGER, FOREIGN KEY(`plant_history_id`) REFERENCES `Plant`(`plant_id`) ON UPDATE NO ACTION ON DELETE SET NULL )");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `Weather` (`weather_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `humidity` REAL NOT NULL, `rain` INTEGER NOT NULL, `timestamp` INTEGER, `zip_code` INTEGER NOT NULL)");
@@ -143,7 +143,7 @@ public final class PlantsDatabase_Impl extends PlantsDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "1dadf3f35f33a4199062d0168702a353", "bfaaa2d334dded009b9e0401a27d2041");
+    }, "1dadf3f35f33a4199062d0168702a353", "b546b7cae431779373bed51c78e99315");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

@@ -17,12 +17,12 @@ public class Plant {
   private long id;
 
   @ColumnInfo(name = "water_frequency_days")
-  private int water_frequency_days;
+  private int waterFrequencyDays;
 
   @ColumnInfo(name = "location_outdoor")
-  private boolean location_outdoor;
+  private boolean locationOutdoor;
 
-  @ColumnInfo(name = "name")
+  @ColumnInfo(collate = ColumnInfo.NOCASE)
   private String name;
 
   @ColumnInfo(name = "zip_code")
@@ -36,20 +36,20 @@ public class Plant {
     this.id = id;
   }
 
-  public int getWater_frequency_days() {
-    return water_frequency_days;
+  public int getWaterFrequencyDays() {
+    return waterFrequencyDays;
   }
 
-  public void setWater_frequency_days(int water_frequency_days) {
-    this.water_frequency_days = water_frequency_days;
+  public void setWaterFrequencyDays(int waterFrequencyDays) {
+    this.waterFrequencyDays = waterFrequencyDays;
   }
 
-  public boolean isLocation_outdoor() {
-    return location_outdoor;
+  public boolean isLocationOutdoor() {
+    return locationOutdoor;
   }
 
-  public void setLocation_outdoor(boolean location_outdoor) {
-    this.location_outdoor = location_outdoor;
+  public void setLocationOutdoor(boolean locationOutdoor) {
+    this.locationOutdoor = locationOutdoor;
   }
 
   public String getName() {

@@ -1,6 +1,6 @@
-plant_name, water_days
-Rose, 7
-Cactus, 25
-Rosemary, 4
-Basil, 2
-Tomato, 1
+name, water_frequency_days, zip_code, location_outdoor
+Rose, 7, 87109, true
+Cactus, 25, 87109, false
+Rosemary, 4, 87109, true
+Basil, 2, 87109, true
+Tomato, 1, 87109, false

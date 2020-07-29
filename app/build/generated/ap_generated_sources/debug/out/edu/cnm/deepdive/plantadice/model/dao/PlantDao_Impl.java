@@ -20,6 +20,7 @@ import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Callable;
 
@@ -44,9 +45,9 @@ public final class PlantDao_Impl implements PlantDao {
       @Override
       public void bind(SupportSQLiteStatement stmt, Plant value) {
         stmt.bindLong(1, value.getId());
-        stmt.bindLong(2, value.getWater_frequency_days());
+        stmt.bindLong(2, value.getWaterFrequencyDays());
         final int _tmp;
-        _tmp = value.isLocation_outdoor() ? 1 : 0;
+        _tmp = value.isLocationOutdoor() ? 1 : 0;
         stmt.bindLong(3, _tmp);
         if (value.getName() == null) {
           stmt.bindNull(4);
@@ -76,9 +77,9 @@ public final class PlantDao_Impl implements PlantDao {
       @Override
       public void bind(SupportSQLiteStatement stmt, Plant value) {
         stmt.bindLong(1, value.getId());
-        stmt.bindLong(2, value.getWater_frequency_days());
+        stmt.bindLong(2, value.getWaterFrequencyDays());
         final int _tmp;
-        _tmp = value.isLocation_outdoor() ? 1 : 0;
+        _tmp = value.isLocationOutdoor() ? 1 : 0;
         stmt.bindLong(3, _tmp);
         if (value.getName() == null) {
           stmt.bindNull(4);
@@ -110,6 +111,23 @@ public final class PlantDao_Impl implements PlantDao {
 
   @Override
   public Single<List<Long>> insert(final Plant... plants) {
+    return Single.fromCallable(new Callable<List<Long>>() {
+      @Override
+      public List<Long> call() throws Exception {
+        __db.beginTransaction();
+        try {
+          List<Long> _result = __insertionAdapterOfPlant.insertAndReturnIdsList(plants);
+          __db.setTransactionSuccessful();
+          return _result;
+        } finally {
+          __db.endTransaction();
+        }
+      }
+    });
+  }
+
+  @Override
+  public Single<List<Long>> insert(final Collection<Plant> plants) {
     return Single.fromCallable(new Callable<List<Long>>() {
       @Override
       public List<Long> call() throws Exception {
@@ -182,14 +200,14 @@ public final class PlantDao_Impl implements PlantDao {
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
             _item.setId(_tmpId);
-            final int _tmpWater_frequency_days;
-            _tmpWater_frequency_days = _cursor.getInt(_cursorIndexOfWaterFrequencyDays);
-            _item.setWater_frequency_days(_tmpWater_frequency_days);
-            final boolean _tmpLocation_outdoor;
+            final int _tmpWaterFrequencyDays;
+            _tmpWaterFrequencyDays = _cursor.getInt(_cursorIndexOfWaterFrequencyDays);
+            _item.setWaterFrequencyDays(_tmpWaterFrequencyDays);
+            final boolean _tmpLocationOutdoor;
             final int _tmp;
             _tmp = _cursor.getInt(_cursorIndexOfLocationOutdoor);
-            _tmpLocation_outdoor = _tmp != 0;
-            _item.setLocation_outdoor(_tmpLocation_outdoor);
+            _tmpLocationOutdoor = _tmp != 0;
+            _item.setLocationOutdoor(_tmpLocationOutdoor);
             final String _tmpName;
             _tmpName = _cursor.getString(_cursorIndexOfName);
             _item.setName(_tmpName);
@@ -238,14 +256,14 @@ public final class PlantDao_Impl implements PlantDao {
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
             _item.setId(_tmpId);
-            final int _tmpWater_frequency_days;
-            _tmpWater_frequency_days = _cursor.getInt(_cursorIndexOfWaterFrequencyDays);
-            _item.setWater_frequency_days(_tmpWater_frequency_days);
-            final boolean _tmpLocation_outdoor;
+            final int _tmpWaterFrequencyDays;
+            _tmpWaterFrequencyDays = _cursor.getInt(_cursorIndexOfWaterFrequencyDays);
+            _item.setWaterFrequencyDays(_tmpWaterFrequencyDays);
+            final boolean _tmpLocationOutdoor;
             final int _tmp;
             _tmp = _cursor.getInt(_cursorIndexOfLocationOutdoor);
-            _tmpLocation_outdoor = _tmp != 0;
-            _item.setLocation_outdoor(_tmpLocation_outdoor);
+            _tmpLocationOutdoor = _tmp != 0;
+            _item.setLocationOutdoor(_tmpLocationOutdoor);
             final String _tmpName;
             _tmpName = _cursor.getString(_cursorIndexOfName);
             _item.setName(_tmpName);
@@ -294,14 +312,14 @@ public final class PlantDao_Impl implements PlantDao {
               final long _tmpId;
               _tmpId = _cursor.getLong(_cursorIndexOfId);
               _result.setId(_tmpId);
-              final int _tmpWater_frequency_days;
-              _tmpWater_frequency_days = _cursor.getInt(_cursorIndexOfWaterFrequencyDays);
-              _result.setWater_frequency_days(_tmpWater_frequency_days);
-              final boolean _tmpLocation_outdoor;
+              final int _tmpWaterFrequencyDays;
+              _tmpWaterFrequencyDays = _cursor.getInt(_cursorIndexOfWaterFrequencyDays);
+              _result.setWaterFrequencyDays(_tmpWaterFrequencyDays);
+              final boolean _tmpLocationOutdoor;
               final int _tmp;
               _tmp = _cursor.getInt(_cursorIndexOfLocationOutdoor);
-              _tmpLocation_outdoor = _tmp != 0;
-              _result.setLocation_outdoor(_tmpLocation_outdoor);
+              _tmpLocationOutdoor = _tmp != 0;
+              _result.setLocationOutdoor(_tmpLocationOutdoor);
               final String _tmpName;
               _tmpName = _cursor.getString(_cursorIndexOfName);
               _result.setName(_tmpName);
