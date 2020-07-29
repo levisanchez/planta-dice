@@ -7,7 +7,7 @@ import edu.cnm.deepdive.plantadice.model.entity.Plant;
 import java.util.List;
 
 /**
- * The type Plant repository.
+ * The Plant repository gathers all requested data, organizes and displays it per the instructions given.
  */
 public class PlantRepository {
 

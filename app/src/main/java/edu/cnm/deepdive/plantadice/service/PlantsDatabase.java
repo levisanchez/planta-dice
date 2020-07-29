@@ -31,7 +31,7 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
 /**
- * The type Plants database.
+ * The Plants database records all elements of plant entity and makes available to other functions.
  */
 @Database(
     entities = {Plant.class, PlantHistory.class, Weather.class},

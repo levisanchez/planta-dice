@@ -7,7 +7,7 @@ import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 /**
- * The Plant entity with elements of each plant
+ * The Plant entity with all elements of each plant
  */
 @Entity(
     indices = @Index(value = "zip_code", unique = false)
@@ -89,7 +89,6 @@ public class Plant {
 
   /**
    * Sets name of the plant.
-   *
    * @param name the name
    */
   public void setName(String name) {
@@ -98,7 +97,6 @@ public class Plant {
 
   /**
    * Gets zip code of the plant for weather preferences.
-   *
    * @return the zip code
    */
   public int getZipCode() {
@@ -107,7 +105,6 @@ public class Plant {
 
   /**
    * Sets zip code.
-   *
    * @param zipCode the zip code
    */
   public void setZipCode(int zipCode) {

@@ -7,7 +7,7 @@ import edu.cnm.deepdive.plantadice.model.entity.PlantHistory;
 
 
 /**
- * The type Plant history with plant.
+ * This Class pairs Plant history with Plant to create an abstract interface to be used by the database
  */
 public class PlantHistoryWithPlant extends PlantHistory {
 
@@ -16,7 +16,6 @@ public class PlantHistoryWithPlant extends PlantHistory {
 
   /**
    * Gets plant.
-   *
    * @return the plant
    */
   public Plant getPlant() {
@@ -25,7 +24,6 @@ public class PlantHistoryWithPlant extends PlantHistory {
 
   /**
    * Sets plant.
-   *
    * @param plant the plant
    */
   public void setPlant(Plant plant) {

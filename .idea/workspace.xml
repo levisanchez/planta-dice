@@ -28,32 +28,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="added entity components and recyclerview">
-      <change afterPath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pdf/erd.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/pdf/wireframe.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="e84c8e2f-0c5f-487f-8380-7deb724eb195" name="Default Changelist" comment="Updated erd, wireframe, and index.md. Added some Javadocs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/PlantsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/PlantsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/HomeSelectionFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/HomeSelectionFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/NotificationFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/NotificationFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PermissionsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PermissionsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PlantConfirmationFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PlantConfirmationFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PlantHistoryFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/controller/PlantHistoryFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantHistoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/PlantHistoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/WeatherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/dao/WeatherDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/PlantHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/model/entity/PlantHistory.java" afterDir="false" />
@@ -65,19 +41,6 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantsDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/PlantsDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/WeatherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/WeatherRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/view/PlantsAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/view/PlantsAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/HomeViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/HomeViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/MainViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/MainViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/NotificationsViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/NotificationsViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/PlantHistoryViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/edu/cnm/deepdive/plantadice/viewmodel/PlantHistoryViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/erd.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/erd.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/erd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/wireframe.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/img/wireframe.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/wireframe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pdf/erd.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pdf/erd.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pdf/wireframe.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/pdf/wireframe.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +177,7 @@
       <workItem from="1595811739547" duration="933000" />
       <workItem from="1595823416644" duration="2978000" />
       <workItem from="1595889116679" duration="43427000" />
-      <workItem from="1596003855909" duration="4053000" />
+      <workItem from="1596003855909" duration="6006000" />
     </task>
     <task id="LOCAL-00001" summary="Added Entity classes">
       <created>1593634075413</created>
@@ -314,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595980978151</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated erd, wireframe, and index.md. Added some Javadocs">
+      <created>1596008158596</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1596008158596</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +315,8 @@
     <MESSAGE value="added floating button and bottom navigation" />
     <MESSAGE value="added some components to PlantsDatabase" />
     <MESSAGE value="added entity components and recyclerview" />
-    <option name="LAST_COMMIT_MESSAGE" value="added entity components and recyclerview" />
+    <MESSAGE value="Updated erd, wireframe, and index.md. Added some Javadocs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated erd, wireframe, and index.md. Added some Javadocs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="373" y="151" key="#Project_Structure" timestamp="1593709648997">
@@ -391,6 +362,10 @@
     </state>
     <state x="566" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595947073363" />
     <state x="566" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595537148377" />
+    <state x="661" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596030189247">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="661" y="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1596030189247" />
     <state x="157" y="132" width="1535" height="888" key="AVDManager" timestamp="1595688688068">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -453,12 +428,12 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="326" y="107" width="1119" height="828" key="SettingsEditor/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1596002043842" />
-    <state x="61" y="23" key="Vcs.Push.Dialog.v2" timestamp="1595984765743">
+    <state x="61" y="23" key="Vcs.Push.Dialog.v2" timestamp="1596008160763">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@-1070.-1057.1920.1057" timestamp="1593634077820" />
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/-1070.-1057.1920.1057/850.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1593697327236" />
-    <state x="61" y="23" key="Vcs.Push.Dialog.v2/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1595984765743" />
+    <state x="61" y="23" key="Vcs.Push.Dialog.v2/0.-1057.1920.1057/-1080.-1222.1080.1897/0.23.1792.1097@0.23.1792.1097" timestamp="1596008160763" />
     <state x="0" y="23" key="Vcs.Push.Dialog.v2/422.-1057.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1595709516832" />
     <state x="0" y="23" key="chooseDestDirectoryDialog" timestamp="1593634532047">
       <screen x="0" y="23" width="1792" height="1097" />

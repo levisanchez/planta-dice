@@ -36,7 +36,6 @@ public class Weather {
 
   /**
    * Gets id.
-   *
    * @return the id
    */
   public long getId() {
@@ -45,7 +44,6 @@ public class Weather {
 
   /**
    * Sets id.
-   *
    * @param id the id
    */
   public void setId(long id) {
@@ -53,8 +51,7 @@ public class Weather {
   }
 
   /**
-   * Gets humidity.
-   *
+   * Gets humidity. This will be used to get humidity in the air to determine if watering is needed
    * @return the humidity
    */
   public float getHumidity() {
@@ -63,7 +60,6 @@ public class Weather {
 
   /**
    * Sets humidity.
-   *
    * @param humidity the humidity
    */
   public void setHumidity(float humidity) {
@@ -71,8 +67,7 @@ public class Weather {
   }
 
   /**
-   * Is rain boolean.
-   *
+   * Is rain boolean. This will be used in a future version as an additional param for determining watering requirements.
    * @return the boolean
    */
   public boolean isRain() {
@@ -81,7 +76,6 @@ public class Weather {
 
   /**
    * Sets rain.
-   *
    * @param rain the rain
    */
   public void setRain(boolean rain) {
@@ -90,7 +84,6 @@ public class Weather {
 
   /**
    * Gets timestamp.
-   *
    * @return the timestamp
    */
   public Date getTimestamp() {
@@ -99,7 +92,6 @@ public class Weather {
 
   /**
    * Sets timestamp.
-   *
    * @param timestamp the timestamp
    */
   public void setTimestamp(Date timestamp) {
@@ -107,8 +99,7 @@ public class Weather {
   }
 
   /**
-   * Gets zip code.
-   *
+   * Gets zip code from user input
    * @return the zip code
    */
   public int getZipCode() {
@@ -116,8 +107,7 @@ public class Weather {
   }
 
   /**
-   * Sets zip code.
-   *
+   * Sets zip code as per user input
    * @param zipCode the zip code
    */
   public void setZipCode(int zipCode) {
@@ -134,7 +124,6 @@ public class Weather {
 
     /**
      * Gets data.
-     *
      * @return the data
      */
     public List<Weather> getData() {
@@ -143,7 +132,6 @@ public class Weather {
 
     /**
      * Sets data.
-     *
      * @param data the data
      */
     public void setData(List<Weather> data) {

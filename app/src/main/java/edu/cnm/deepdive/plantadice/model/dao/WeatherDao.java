@@ -72,7 +72,7 @@ public interface WeatherDao {
   LiveData<List<Weather>> selectAll();
 
   /**
-   * Select a single weather id element by weathehId
+   * Select a single weather id element by weatherId
    *
    * @param weatherId the weather id
    * @return the single

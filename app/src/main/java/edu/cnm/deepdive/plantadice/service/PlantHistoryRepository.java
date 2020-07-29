@@ -11,7 +11,7 @@ import io.reactivex.schedulers.Schedulers;
 import java.util.List;
 
 /**
- * The type Plant history repository.
+ * The Plant history repository gathers all requested data, organizes and displays it per the instructions given.
  */
 public class PlantHistoryRepository {
 
@@ -22,8 +22,7 @@ public class PlantHistoryRepository {
 
 
   /**
-   * Instantiates a new Plant history repository.
-   *
+   * Instantiates a new Plant history repository. This allows it to be used by other classes.
    * @param context the context
    */
   public PlantHistoryRepository(Context context) {
@@ -35,7 +34,6 @@ public class PlantHistoryRepository {
 
   /**
    * Gets all.
-   *
    * @return the all
    */
   public LiveData<List<PlantHistory>> getAll() {
@@ -43,8 +41,7 @@ public class PlantHistoryRepository {
   }
 
   /**
-   * Get single.
-   *
+   * Get single PlantHistory item
    * @param id the id
    * @return the single
    */
@@ -54,8 +51,7 @@ public class PlantHistoryRepository {
   }
 
   /**
-   * Save completable.
-   *
+   * Saves completable.
    * @param plantHistory the plant history
    * @return the completable
    */
@@ -71,8 +67,7 @@ public class PlantHistoryRepository {
   }
 
   /**
-   * Delete completable.
-   *
+   * Deletes completable.
    * @param plantHistory the plant history
    * @return the completable
    */

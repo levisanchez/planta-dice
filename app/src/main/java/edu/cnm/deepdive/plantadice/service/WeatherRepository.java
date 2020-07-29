@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * The type Weather repository.
+ * The Weather repository gathers all requested data, organizes and displays it per the instructions given.
  */
 public class WeatherRepository {
 

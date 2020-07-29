@@ -36,8 +36,7 @@ public class PlantHistory {
   private Date timestamp;
 
   /**
-   * Gets id.
-   *
+   * Gets id of Plant History
    * @return the id
    */
   public long getId() {
@@ -45,8 +44,7 @@ public class PlantHistory {
   }
 
   /**
-   * Sets id.
-   *
+   * Sets id of Plant History.
    * @param id the id
    */
   public void setId(long id) {
@@ -54,8 +52,7 @@ public class PlantHistory {
   }
 
   /**
-   * Gets plant state.
-   *
+   * Gets plant state.  This will be used in a future version
    * @return the plant state
    */
   public String getPlantState() {
@@ -63,8 +60,7 @@ public class PlantHistory {
   }
 
   /**
-   * Sets plant state.
-   *
+   * Sets plant state. This will be used in a future version.
    * @param plantState the plant state
    */
   public void setPlantState(String plantState) {
@@ -72,8 +68,7 @@ public class PlantHistory {
   }
 
   /**
-   * Is water confirm boolean.
-   *
+   * Is water confirm boolean. This determines if user watered plant. Will be used in future version
    * @return the boolean
    */
   public boolean isWater_confirm() {
@@ -82,7 +77,6 @@ public class PlantHistory {
 
   /**
    * Sets water confirm.
-   *
    * @param water_confirm the water confirm
    */
   public void setWater_confirm(boolean water_confirm) {
@@ -91,7 +85,6 @@ public class PlantHistory {
 
   /**
    * Gets timestamp.
-   *
    * @return the timestamp
    */
   public Date getTimestamp() {
@@ -100,7 +93,6 @@ public class PlantHistory {
 
   /**
    * Sets timestamp.
-   *
    * @param timestamp the timestamp
    */
   public void setTimestamp(Date timestamp) {

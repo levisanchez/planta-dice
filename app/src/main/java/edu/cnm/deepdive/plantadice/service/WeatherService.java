@@ -18,16 +18,18 @@ import retrofit2.http.Query;
 
 
 /**
- * The interface Weather service.
+ * The interface Weather service calls upon the API to WeatherUnlocked. It uses ZIP code entered by
+ * user to determine location and pass it through a query to service. Query service returns current
+ * weather conditions including a notation if raining and the humidity percentage.
  */
 public interface WeatherService {
 
   /**
    * Gets weather.
    *
-   * @param zipCode the zip code
-   * @param appId   the app id
-   * @param appKey  the app key
+   * @param zipCode the zip code entered by user
+   * @param appId   the app id as assigned by WeatherUnlocked
+   * @param appKey  the app key as assigned by WeatherUnlocked
    * @return the weather
    */
   @GET("current/us.{zipCode}")
